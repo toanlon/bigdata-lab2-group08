@@ -1,0 +1,31 @@
+# Secrets and credentials
+*.env
+*.key
+*.pem
+*.json.secret
+private/
+secrets/
+
+# Kubernetes / cloud credentials
+kubeconfig
+*.kubeconfig
+.kube/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local virtual environments
+.venv/
+venv/
+env/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Temporary/runtime files
+*.tmp
+*.log
