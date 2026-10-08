@@ -1,0 +1,33 @@
+Task 1 - I01 Input Integrity Verification
+
+Status: PASS
+
+Store ID:
+bd-g08-objects
+
+Input bucket:
+research-raw
+
+Input prefix:
+lab2/inputs/batch-01/
+
+Authoritative manifest:
+trusted_manifest.json
+
+Verification method:
+Each of the four input objects was retrieved through the S3 API
+and compared against the authoritative trusted manifest using
+exact byte length and SHA-256 digest.
+
+Results:
+1. observations_a.csv   - 421028 bytes - SHA-256 match - PASS
+2. observations_b.jsonl - 1037439 bytes - SHA-256 match - PASS
+3. qa_reference.csv     - 1423 bytes - SHA-256 match - PASS
+4. sensors.csv          - 256 bytes - SHA-256 match - PASS
+
+Acceptance result:
+4/4 byte-length matches.
+4/4 SHA-256 matches.
+Exact input inventory confirmed.
+
+I01: PASS

@@ -1,0 +1,5 @@
+retrieval_time_utc,store_id,bucket,key,bytes,sha256,status
+2026-10-08T19:22:43.774758+00:00,bd-g08-objects,research-raw,lab2/inputs/batch-01/observations_a.csv,421028,5157418915d867980fac8d84551a8b856bba1669ca2e33cef91a15ee82101aea,PASS
+2026-10-08T19:22:43.830936+00:00,bd-g08-objects,research-raw,lab2/inputs/batch-01/observations_b.jsonl,1037439,3072ad0b725ea3763ad4d1a7c744465f997614892dd1460f9cd815094ec61b70,PASS
+2026-10-08T19:22:43.839922+00:00,bd-g08-objects,research-raw,lab2/inputs/batch-01/qa_reference.csv,1423,129463c2a4e63f2dabfa2a5dd31b92e4fe4858d2415d3c7ef495cc6c6d7b65c2,PASS
+2026-10-08T19:22:43.843577+00:00,bd-g08-objects,research-raw,lab2/inputs/batch-01/sensors.csv,256,02c390e127c37b9d12e9ca156eae23a450ad1ae037001cddd9651bb6516b9bde,PASS
