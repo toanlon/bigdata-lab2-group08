@@ -1,0 +1,6 @@
+Pool [pool-2] for [cluster-1] will be resized to 2 node(s) in each zone it spans.
+
+Do you want to continue (Y/n)?  
+Resizing cluster-1...
+......................................................................................done.
+Updated [https://container.googleapis.com/v1/projects/bigdata-lab1-group08/zones/us-east5-a/clusters/cluster-1].

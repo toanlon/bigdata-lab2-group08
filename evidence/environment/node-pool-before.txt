@@ -1,0 +1,6 @@
+autoscaling: {}
+config:
+  machineType: e2-standard-2
+locations:
+- us-east5-a
+name: pool-2

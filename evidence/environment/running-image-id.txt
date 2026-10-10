@@ -1,0 +1,1 @@
+us-east5-docker.pkg.dev/bigdata-lab1-group08/bigdata-lab/lab2-runtime@sha256:532a5c71a098bcf167817467d3cc8d5aa74c042031f5fdb139726f90a850ab74

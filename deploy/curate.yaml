@@ -1,0 +1,54 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: curate
+  labels:
+    access: s3
+spec:
+  automountServiceAccountToken: false
+
+  securityContext:
+    runAsNonRoot: true
+    runAsUser: 1000
+    runAsGroup: 1000
+    fsGroup: 1000
+
+  containers:
+    - name: client
+      image: us-east5-docker.pkg.dev/bigdata-lab1-group08/bigdata-lab/lab2-runtime@sha256:532a5c71a098bcf167817467d3cc8d5aa74c042031f5fdb139726f90a850ab74
+      command: ["sleep", "infinity"]
+      workingDir: /work
+
+      envFrom:
+        - secretRef:
+            name: s3-ingestor
+
+      env:
+        - name: S3_ENDPOINT
+          value: "http://objects:8333"
+        - name: STORE_ID
+          value: "bd-g08-objects"
+
+      securityContext:
+        allowPrivilegeEscalation: false
+        capabilities:
+          drop: ["ALL"]
+        seccompProfile:
+          type: RuntimeDefault
+
+      resources:
+        requests:
+          cpu: "500m"
+          memory: "512Mi"
+        limits:
+          cpu: "1"
+          memory: "1Gi"
+
+      volumeMounts:
+        - name: work
+          mountPath: /work
+
+  volumes:
+    - name: work
+      emptyDir:
+        sizeLimit: "2Gi"

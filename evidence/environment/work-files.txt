@@ -1,0 +1,9 @@
+total 36K
+drwxr-sr-x 2 1000 1000 4.0K Oct 10 08:14 __pycache__
+-rw-r--r-- 1 1000 1000 1.1K Oct 10 08:14 curate.sql
+-rw-r--r-- 1 1000 1000 1.8K Oct 10 08:14 helpers.py
+-rw-r--r-- 1 1000 1000 5.2K Oct 10 08:14 quality.sql
+-rw-r--r-- 1 1000 1000 1.7K Oct 10 08:14 run_quality.py
+-rw-r--r-- 1 1000 1000 3.6K Oct 10 08:14 stage_inputs.py
+-rw-r--r-- 1 1000 1000  796 Oct 10 08:14 trusted_manifest.json
+-rw-r--r-- 1 1000 1000 1005 Oct 10 08:14 typed.sql

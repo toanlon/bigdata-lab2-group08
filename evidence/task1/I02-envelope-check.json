@@ -1,0 +1,21 @@
+{
+  "total_envelopes": 10205,
+  "unique_physical_keys": 10205,
+  "duplicate_physical_keys": 0,
+  "counts_by_source": {
+    "s3://research-raw/lab2/inputs/batch-01/observations_a.csv": 5000,
+    "s3://research-raw/lab2/inputs/batch-01/observations_b.jsonl": 5205
+  },
+  "parse_states": {
+    "true": 10200,
+    "false": 5
+  },
+  "checks": {
+    "total_is_10205": true,
+    "physical_keys_unique": true,
+    "source_counts_match_manifest": true,
+    "source_ordinals_complete": true,
+    "parse_flags_valid": true
+  },
+  "status": "PASS"
+}

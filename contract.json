@@ -1,0 +1,176 @@
+{
+  "contract_version": "research-telemetry-v1",
+  "schema_version": "research-telemetry-v1",
+  "as_of": "2026-02-09T00:00:00Z",
+  "normalization": {
+    "trim_uppercase": [
+      "record_id",
+      "sensor_id",
+      "unit"
+    ],
+    "missing": [
+      "null",
+      "empty_string",
+      "whitespace_only"
+    ],
+    "invent_identifiers": false
+  },
+  "required_fields": [
+    "record_id",
+    "sensor_id",
+    "event_time",
+    "ingest_time",
+    "reading",
+    "unit"
+  ],
+  "record_id_pattern": "R[0-9]{6}",
+  "time": {
+    "format": "%Y-%m-%dT%H:%M:%SZ",
+    "timezone": "UTC",
+    "chronology": "event_time <= ingest_time <= as_of",
+    "timely_max_lag_seconds": 900,
+    "retain_otherwise_valid_late_rows": true
+  },
+  "temperature": {
+    "supported_units": [
+      "C",
+      "F"
+    ],
+    "fahrenheit_to_celsius": "(reading - 32) * 5 / 9",
+    "require_finite": true,
+    "min_c": -30,
+    "max_c": 60,
+    "bounds_inclusive": true,
+    "validate_before_rounding": true,
+    "output_type": "DECIMAL(8,2)"
+  },
+  "registry": {
+    "file": "sensors.csv",
+    "key": "sensor_id",
+    "require_known_sensor": true,
+    "site_from_registry": true
+  },
+  "deduplication": {
+    "key": "record_id",
+    "eligible_requires": [
+      "parse_ok",
+      "valid_record_id",
+      "parseable_ingest_time"
+    ],
+    "order": [
+      {
+        "column": "ingest_ts",
+        "direction": "DESC"
+      },
+      {
+        "column": "source_object",
+        "direction": "ASC"
+      },
+      {
+        "column": "source_row",
+        "direction": "ASC"
+      }
+    ],
+    "duplicate_reason": "SUPERSEDED",
+    "fallback_to_older_valid_version": false
+  },
+  "reason_precedence": {
+    "pre_key": [
+      "PARSE",
+      "KEY",
+      "INGEST_PARSE"
+    ],
+    "winner": [
+      "REQUIRED",
+      "NUMERIC",
+      "UNIT",
+      "RANGE",
+      "TIME_PARSE",
+      "TIME_ORDER",
+      "REFERENCE"
+    ],
+    "retain_all_failing_reasons": true,
+    "reference_reason_means": "sensor_id absent from registry"
+  },
+  "qa_reference": {
+    "file": "qa_reference.csv",
+    "key": "record_id",
+    "reference_column": "reference_c",
+    "expected_reference_ids": 100,
+    "agreement_tolerance_c": 0.05,
+    "evaluation_only": true,
+    "use_for_repair_or_winner_selection": false
+  },
+  "release_thresholds": {
+    "nonempty": true,
+    "exact_physical_reconciliation": true,
+    "schema_compliance": 1.0,
+    "required_completeness": 1.0,
+    "business_key_uniqueness": 1.0,
+    "value_validity": 1.0,
+    "registry_consistency": 1.0,
+    "temporal_consistency": 1.0,
+    "timeliness": 0.95,
+    "reference_coverage": 1.0,
+    "reference_agreement": 0.95
+  },
+  "metric_policy": {
+    "zero_denominator_value": null,
+    "zero_denominator_status": "NOT_EVALUATED",
+    "required_null_is_failure": true,
+    "before_population": "winners before row-validity filtering",
+    "before_uniqueness_population": "key_eligible",
+    "timeliness_population": "chronologically valid rows only"
+  },
+  "privacy": {
+    "optional_restricted_fields": [
+      "operator_email"
+    ],
+    "release_excluded_fields": [
+      "operator_email",
+      "raw_payload"
+    ]
+  },
+  "release_columns": [
+    {
+      "name": "record_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "sensor_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "site",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_time_utc",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "ingest_time_utc",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "temperature_c",
+      "type": "DECIMAL(8,2)"
+    },
+    {
+      "name": "is_late",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "source_object",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_row",
+      "type": "BIGINT"
+    },
+    {
+      "name": "source_sha256",
+      "type": "VARCHAR"
+    }
+  ]
+}

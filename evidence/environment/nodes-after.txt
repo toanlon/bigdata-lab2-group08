@@ -1,0 +1,3 @@
+NAME                                 STATUS   ROLES    AGE   VERSION
+gke-cluster-1-pool-2-2dc330d1-55qd   Ready    <none>   17h   v1.35.8-gke.1380001
+gke-cluster-1-pool-2-2dc330d1-gf4b   Ready    <none>   60s   v1.35.8-gke.1380001

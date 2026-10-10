@@ -1,0 +1,207 @@
+{
+  "REQUIRED": [
+    {
+      "source_object": "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+      "source_row": 1,
+      "record_id": "R000001",
+      "sensor_id": "S01",
+      "unit": "C",
+      "event_time": "2026-02-02T00:00:30Z",
+      "ingest_time": "2026-02-02T00:01:30Z",
+      "required_ok": false,
+      "value_ok": false,
+      "sensor_ok": true,
+      "chronology_ok": true
+    },
+    {
+      "source_object": "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+      "source_row": 2,
+      "record_id": "R000002",
+      "sensor_id": "S02",
+      "unit": "F",
+      "event_time": "2026-02-02T00:01:00Z",
+      "ingest_time": "2026-02-02T00:02:00Z",
+      "required_ok": false,
+      "value_ok": false,
+      "sensor_ok": true,
+      "chronology_ok": true
+    },
+    {
+      "source_object": "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+      "source_row": 3,
+      "record_id": "R000003",
+      "sensor_id": "S03",
+      "unit": "C",
+      "event_time": "2026-02-02T00:01:30Z",
+      "ingest_time": "2026-02-02T00:02:30Z",
+      "required_ok": false,
+      "value_ok": false,
+      "sensor_ok": true,
+      "chronology_ok": true
+    }
+  ],
+  "VALUE": [
+    {
+      "source_object": "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+      "source_row": 1,
+      "record_id": "R000001",
+      "sensor_id": "S01",
+      "unit": "C",
+      "event_time": "2026-02-02T00:00:30Z",
+      "ingest_time": "2026-02-02T00:01:30Z",
+      "required_ok": false,
+      "value_ok": false,
+      "sensor_ok": true,
+      "chronology_ok": true
+    },
+    {
+      "source_object": "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+      "source_row": 2,
+      "record_id": "R000002",
+      "sensor_id": "S02",
+      "unit": "F",
+      "event_time": "2026-02-02T00:01:00Z",
+      "ingest_time": "2026-02-02T00:02:00Z",
+      "required_ok": false,
+      "value_ok": false,
+      "sensor_ok": true,
+      "chronology_ok": true
+    },
+    {
+      "source_object": "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+      "source_row": 3,
+      "record_id": "R000003",
+      "sensor_id": "S03",
+      "unit": "C",
+      "event_time": "2026-02-02T00:01:30Z",
+      "ingest_time": "2026-02-02T00:02:30Z",
+      "required_ok": false,
+      "value_ok": false,
+      "sensor_ok": true,
+      "chronology_ok": true
+    }
+  ],
+  "UNKNOWN_SENSOR": [
+    {
+      "source_object": "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+      "source_row": 311,
+      "record_id": "R000311",
+      "sensor_id": "S99",
+      "unit": "C",
+      "event_time": "2026-02-02T02:35:30Z",
+      "ingest_time": "2026-02-02T02:36:30Z",
+      "required_ok": true,
+      "value_ok": true,
+      "sensor_ok": false,
+      "chronology_ok": true
+    },
+    {
+      "source_object": "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+      "source_row": 312,
+      "record_id": "R000312",
+      "sensor_id": "S99",
+      "unit": "F",
+      "event_time": "2026-02-02T02:36:00Z",
+      "ingest_time": "2026-02-02T02:37:00Z",
+      "required_ok": true,
+      "value_ok": true,
+      "sensor_ok": false,
+      "chronology_ok": true
+    },
+    {
+      "source_object": "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+      "source_row": 313,
+      "record_id": "R000313",
+      "sensor_id": "S99",
+      "unit": "C",
+      "event_time": "2026-02-02T02:36:30Z",
+      "ingest_time": "2026-02-02T02:37:30Z",
+      "required_ok": true,
+      "value_ok": true,
+      "sensor_ok": false,
+      "chronology_ok": true
+    }
+  ],
+  "CHRONOLOGY": [
+    {
+      "source_object": "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+      "source_row": 241,
+      "record_id": "R000241",
+      "sensor_id": "S01",
+      "unit": "C",
+      "event_time": "not-a-time",
+      "ingest_time": "2026-02-02T02:01:30Z",
+      "required_ok": true,
+      "value_ok": true,
+      "sensor_ok": true,
+      "chronology_ok": false
+    },
+    {
+      "source_object": "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+      "source_row": 242,
+      "record_id": "R000242",
+      "sensor_id": "S02",
+      "unit": "F",
+      "event_time": "not-a-time",
+      "ingest_time": "2026-02-02T02:02:00Z",
+      "required_ok": true,
+      "value_ok": true,
+      "sensor_ok": true,
+      "chronology_ok": false
+    },
+    {
+      "source_object": "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+      "source_row": 243,
+      "record_id": "R000243",
+      "sensor_id": "S03",
+      "unit": "C",
+      "event_time": "not-a-time",
+      "ingest_time": "2026-02-02T02:02:30Z",
+      "required_ok": true,
+      "value_ok": true,
+      "sensor_ok": true,
+      "chronology_ok": false
+    }
+  ],
+  "LATE": [
+    {
+      "source_object": "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+      "source_row": 381,
+      "record_id": "R000381",
+      "sensor_id": "S01",
+      "unit": "C",
+      "event_time": "2026-02-02T03:10:30Z",
+      "ingest_time": "2026-02-02T03:40:30Z",
+      "required_ok": true,
+      "value_ok": true,
+      "sensor_ok": true,
+      "chronology_ok": true
+    },
+    {
+      "source_object": "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+      "source_row": 382,
+      "record_id": "R000382",
+      "sensor_id": "S02",
+      "unit": "F",
+      "event_time": "2026-02-02T03:11:00Z",
+      "ingest_time": "2026-02-02T03:41:00Z",
+      "required_ok": true,
+      "value_ok": true,
+      "sensor_ok": true,
+      "chronology_ok": true
+    },
+    {
+      "source_object": "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+      "source_row": 383,
+      "record_id": "R000383",
+      "sensor_id": "S03",
+      "unit": "C",
+      "event_time": "2026-02-02T03:11:30Z",
+      "ingest_time": "2026-02-02T03:41:30Z",
+      "required_ok": true,
+      "value_ok": true,
+      "sensor_ok": true,
+      "chronology_ok": true
+    }
+  ]
+}
