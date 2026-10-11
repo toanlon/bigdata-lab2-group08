@@ -1,0 +1,56 @@
+{
+  "mode": "DRY_RUN_ONLY",
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "evaluated_at": "2026-10-11T00:00:00Z",
+  "deletion_performed": false,
+  "results": [
+    {
+      "case_id": "R01",
+      "object_id": "expired-scratch",
+      "expires_at": "2026-10-01T00:00:00Z",
+      "hold": false,
+      "active_dependency": false,
+      "expected": "ELIGIBLE",
+      "decision": "ELIGIBLE",
+      "evaluated_at": "2026-10-11T00:00:00Z",
+      "deletion_performed": false,
+      "passed": true
+    },
+    {
+      "case_id": "R02",
+      "object_id": "expired-quarantine-hold",
+      "expires_at": "2026-10-01T00:00:00Z",
+      "hold": true,
+      "active_dependency": false,
+      "expected": "KEEP/HOLD",
+      "decision": "KEEP/HOLD",
+      "evaluated_at": "2026-10-11T00:00:00Z",
+      "deletion_performed": false,
+      "passed": true
+    },
+    {
+      "case_id": "R03",
+      "object_id": "expired-raw-active-release-dependency",
+      "expires_at": "2026-10-01T00:00:00Z",
+      "hold": false,
+      "active_dependency": true,
+      "expected": "KEEP/ACTIVE_DEPENDENCY",
+      "decision": "KEEP/ACTIVE_DEPENDENCY",
+      "evaluated_at": "2026-10-11T00:00:00Z",
+      "deletion_performed": false,
+      "passed": true
+    },
+    {
+      "case_id": "R04",
+      "object_id": "unexpired-object",
+      "expires_at": "2026-12-01T00:00:00Z",
+      "hold": false,
+      "active_dependency": false,
+      "expected": "KEEP/NOT_EXPIRED",
+      "decision": "KEEP/NOT_EXPIRED",
+      "evaluated_at": "2026-10-11T00:00:00Z",
+      "deletion_performed": false,
+      "passed": true
+    }
+  ]
+}

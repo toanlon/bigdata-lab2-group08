@@ -1,0 +1,52 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "source_lineage_file": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/lineage.jsonl",
+  "lifecycle_checks": {
+    "exactly_one_start": true,
+    "exactly_one_complete": true,
+    "start_run_id_matches_expected": true,
+    "complete_run_id_matches_expected": true,
+    "start_complete_run_id_match": true,
+    "start_complete_job_match": true,
+    "start_has_inputs": true,
+    "complete_has_outputs": true,
+    "start_complete_inputs_match": true,
+    "lineage_contains_curated_output": true,
+    "lineage_contains_quarantine_output": true
+  },
+  "job": {
+    "namespace": "vnu-uet.bigdata.lab2",
+    "name": "curate-and-verify"
+  },
+  "input_count": 5,
+  "outputs_recorded": [
+    {
+      "namespace": "urn:bigdata:bd-g08-objects",
+      "name": "file:///work/runs/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/curated.parquet"
+    },
+    {
+      "namespace": "urn:bigdata:bd-g08-objects",
+      "name": "file:///work/runs/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/duplicates.csv"
+    },
+    {
+      "namespace": "urn:bigdata:bd-g08-objects",
+      "name": "file:///work/runs/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/quarantine.csv"
+    }
+  ],
+  "catalog_locations": {
+    "curated_candidate": [
+      "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/curated.parquet"
+    ],
+    "quarantine_records": [
+      "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/quarantine.csv"
+    ]
+  },
+  "output_location_reconciliation": {
+    "curated_exact_location_match": false,
+    "quarantine_exact_location_match": false,
+    "status": "MISMATCH_REQUIRES_RECONCILIATION",
+    "note": "Lineage records file:///work/runs/... paths while catalog locations refer to S3 staging. Do not assume these are identical objects without a verified mapping or matching content hashes."
+  },
+  "stage_upload_status": "VERIFIED",
+  "overall_status": "PASS_WITH_WARNING"
+}

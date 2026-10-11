@@ -1,0 +1,77 @@
+{
+  "check_id": "L02",
+  "trace_type": "accepted_curated_row",
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "record": {
+    "record_id": "R000381",
+    "sensor_id": "S01",
+    "site": "zone-1",
+    "event_time_utc": "2026-02-02 03:10:30",
+    "ingest_time_utc": "2026-02-02 03:40:30",
+    "temperature_c": "26.1",
+    "is_late": "True",
+    "source_object": "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+    "source_row": "381",
+    "source_sha256": "5157418915d867980fac8d84551a8b856bba1669ca2e33cef91a15ee82101aea"
+  },
+  "source_object_manifest": {
+    "key": "observations_a.csv",
+    "bytes": 421028,
+    "records": 5000,
+    "sha256": "5157418915d867980fac8d84551a8b856bba1669ca2e33cef91a15ee82101aea"
+  },
+  "source_hash_matches_manifest": true,
+  "contract_version": "research-telemetry-v1",
+  "rules": {
+    "schema_version": "research-telemetry-v1",
+    "temperature": {
+      "supported_units": [
+        "C",
+        "F"
+      ],
+      "fahrenheit_to_celsius": "(reading - 32) * 5 / 9",
+      "require_finite": true,
+      "min_c": -30,
+      "max_c": 60,
+      "bounds_inclusive": true,
+      "validate_before_rounding": true,
+      "output_type": "DECIMAL(8,2)"
+    },
+    "deduplication": {
+      "key": "record_id",
+      "eligible_requires": [
+        "parse_ok",
+        "valid_record_id",
+        "parseable_ingest_time"
+      ],
+      "order": [
+        {
+          "column": "ingest_ts",
+          "direction": "DESC"
+        },
+        {
+          "column": "source_object",
+          "direction": "ASC"
+        },
+        {
+          "column": "source_row",
+          "direction": "ASC"
+        }
+      ],
+      "duplicate_reason": "SUPERSEDED",
+      "fallback_to_older_valid_version": false
+    },
+    "time_policy": {
+      "format": "%Y-%m-%dT%H:%M:%SZ",
+      "timezone": "UTC",
+      "chronology": "event_time <= ingest_time <= as_of",
+      "timely_max_lag_seconds": 900,
+      "retain_otherwise_valid_late_rows": true
+    }
+  },
+  "evidence_files": [
+    "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/curated.parquet",
+    "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/inputs/trusted_manifest.json",
+    "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/inputs/contract.json"
+  ]
+}
