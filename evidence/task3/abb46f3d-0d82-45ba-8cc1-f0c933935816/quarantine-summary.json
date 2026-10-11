@@ -1,0 +1,42 @@
+[
+  {
+    "primary_reason": "INGEST_PARSE",
+    "count": 20
+  },
+  {
+    "primary_reason": "KEY",
+    "count": 20
+  },
+  {
+    "primary_reason": "NUMERIC",
+    "count": 60
+  },
+  {
+    "primary_reason": "PARSE",
+    "count": 5
+  },
+  {
+    "primary_reason": "RANGE",
+    "count": 40
+  },
+  {
+    "primary_reason": "REFERENCE",
+    "count": 30
+  },
+  {
+    "primary_reason": "REQUIRED",
+    "count": 110
+  },
+  {
+    "primary_reason": "TIME_ORDER",
+    "count": 30
+  },
+  {
+    "primary_reason": "TIME_PARSE",
+    "count": 40
+  },
+  {
+    "primary_reason": "UNIT",
+    "count": 40
+  }
+]

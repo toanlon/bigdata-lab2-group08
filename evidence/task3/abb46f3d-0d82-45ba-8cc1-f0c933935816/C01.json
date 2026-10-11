@@ -1,0 +1,23 @@
+{
+  "check_id": "C01",
+  "pass": true,
+  "counts": {
+    "raw_envelopes": 10205,
+    "candidate": 9610,
+    "exported_quarantine": 395,
+    "exported_duplicates": 200
+  },
+  "count_reconciliation": true,
+  "failures": {
+    "missing_physical_ids": [],
+    "extra_physical_ids": [],
+    "repeated_or_overlapping_physical_ids": [],
+    "repeated_curated_record_ids": []
+  },
+  "queries": {
+    "missing_physical_ids": "SELECT source_object,source_row::BIGINT source_row FROM raw_envelopes EXCEPT SELECT source_object,source_row FROM output_ids",
+    "extra_physical_ids": "SELECT source_object,source_row FROM output_ids EXCEPT SELECT source_object,source_row::BIGINT FROM raw_envelopes",
+    "repeated_or_overlapping_physical_ids": "SELECT source_object,source_row,count(*) n FROM output_ids GROUP BY 1,2 HAVING count(*)<>1",
+    "repeated_curated_record_ids": "SELECT record_id,count(*) n FROM candidate GROUP BY 1 HAVING count(*)<>1"
+  }
+}

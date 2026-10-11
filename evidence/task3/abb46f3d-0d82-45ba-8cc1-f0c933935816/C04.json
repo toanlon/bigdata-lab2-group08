@@ -1,0 +1,143 @@
+{
+  "check_id": "C04",
+  "pass": true,
+  "data_kind": "separate synthetic fixtures, never mixed into candidate",
+  "cases": [
+    {
+      "case_id": "F32_to_C0",
+      "expected_behavior": "32 F converts to 0.00 C and is retained",
+      "pass": true,
+      "observed": {
+        "curated": [
+          {
+            "record_id": "R000001",
+            "sensor_id": "S01",
+            "site": "fixture-site",
+            "event_time_utc": "2026-02-01T00:00:00",
+            "ingest_time_utc": "2026-02-01T00:01:00",
+            "temperature_c": 0.0,
+            "is_late": false,
+            "source_object": "fixture://observations",
+            "source_row": 1,
+            "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        ],
+        "quarantine": [],
+        "duplicates": []
+      }
+    },
+    {
+      "case_id": "unsupported_K",
+      "expected_behavior": "Unsupported unit rejected, never assumed Celsius",
+      "pass": true,
+      "observed": {
+        "curated": [],
+        "quarantine": [
+          {
+            "source_object": "fixture://observations",
+            "source_row": 2,
+            "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+            "record_id": "R000002",
+            "sensor_id": "S01",
+            "event_time": "2026-02-01T00:00:00Z",
+            "ingest_time": "2026-02-01T00:01:00Z",
+            "reading": "10",
+            "unit": "K",
+            "operator_email": "",
+            "raw_payload": "{}",
+            "primary_reason": "UNIT",
+            "all_reasons": "[\"UNIT\"]"
+          }
+        ],
+        "duplicates": []
+      }
+    },
+    {
+      "case_id": "nonfinite_NaN",
+      "expected_behavior": "Nonfinite numeric input rejected before conversion/rounding",
+      "pass": true,
+      "observed": {
+        "curated": [],
+        "quarantine": [
+          {
+            "source_object": "fixture://observations",
+            "source_row": 3,
+            "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+            "record_id": "R000003",
+            "sensor_id": "S01",
+            "event_time": "2026-02-01T00:00:00Z",
+            "ingest_time": "2026-02-01T00:01:00Z",
+            "reading": "NaN",
+            "unit": "C",
+            "operator_email": "",
+            "raw_payload": "{}",
+            "primary_reason": "NUMERIC",
+            "all_reasons": "[\"NUMERIC\"]"
+          }
+        ],
+        "duplicates": []
+      }
+    },
+    {
+      "case_id": "blank_optional_email",
+      "expected_behavior": "Optional blank email does not reject a row; release schema omits it",
+      "pass": true,
+      "observed": {
+        "curated": [
+          {
+            "record_id": "R000004",
+            "sensor_id": "S01",
+            "site": "fixture-site",
+            "event_time_utc": "2026-02-01T00:00:00",
+            "ingest_time_utc": "2026-02-01T00:01:00",
+            "temperature_c": 10.0,
+            "is_late": false,
+            "source_object": "fixture://observations",
+            "source_row": 4,
+            "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+          }
+        ],
+        "quarantine": [],
+        "duplicates": []
+      }
+    },
+    {
+      "case_id": "newer_invalid_no_fallback",
+      "expected_behavior": "Newer invalid winner quarantined; older valid row remains SUPERSEDED",
+      "pass": true,
+      "observed": {
+        "curated": [],
+        "quarantine": [
+          {
+            "source_object": "fixture://observations",
+            "source_row": 6,
+            "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+            "record_id": "R000005",
+            "sensor_id": "S01",
+            "event_time": "2026-02-01T00:00:00Z",
+            "ingest_time": "2026-02-01T00:02:00Z",
+            "reading": "100",
+            "unit": "C",
+            "operator_email": "",
+            "raw_payload": "{}",
+            "primary_reason": "RANGE",
+            "all_reasons": "[\"RANGE\"]"
+          }
+        ],
+        "duplicates": [
+          {
+            "source_object": "fixture://observations",
+            "source_row": 5,
+            "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+            "record_id": "R000005",
+            "ingest_time_utc": "2026-02-01T00:01:00",
+            "winner_source_object": "fixture://observations",
+            "winner_source_row": 6,
+            "winner_source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+            "reason": "SUPERSEDED"
+          }
+        ]
+      }
+    }
+  ]
+}

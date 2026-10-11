@@ -1,0 +1,602 @@
+[
+  {
+    "record_id": "R000801",
+    "reference_c": 18.1,
+    "temperature_c": 18.1,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000802",
+    "reference_c": 18.2,
+    "temperature_c": 18.2,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000803",
+    "reference_c": 18.3,
+    "temperature_c": 18.3,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000804",
+    "reference_c": 18.4,
+    "temperature_c": 18.4,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000805",
+    "reference_c": 18.5,
+    "temperature_c": 18.5,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000806",
+    "reference_c": 18.6,
+    "temperature_c": 18.6,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000807",
+    "reference_c": 18.7,
+    "temperature_c": 18.7,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000808",
+    "reference_c": 18.8,
+    "temperature_c": 18.8,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000809",
+    "reference_c": 18.9,
+    "temperature_c": 18.9,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000810",
+    "reference_c": 19.0,
+    "temperature_c": 27.0,
+    "absolute_error_c": 8.0
+  },
+  {
+    "record_id": "R000811",
+    "reference_c": 19.1,
+    "temperature_c": 27.1,
+    "absolute_error_c": 8.0
+  },
+  {
+    "record_id": "R000812",
+    "reference_c": 19.2,
+    "temperature_c": 27.2,
+    "absolute_error_c": 8.0
+  },
+  {
+    "record_id": "R000813",
+    "reference_c": 19.3,
+    "temperature_c": 27.3,
+    "absolute_error_c": 8.0
+  },
+  {
+    "record_id": "R000814",
+    "reference_c": 19.4,
+    "temperature_c": 27.4,
+    "absolute_error_c": 8.0
+  },
+  {
+    "record_id": "R000815",
+    "reference_c": 19.5,
+    "temperature_c": 19.5,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000816",
+    "reference_c": 19.6,
+    "temperature_c": 19.6,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000817",
+    "reference_c": 19.7,
+    "temperature_c": 19.7,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000818",
+    "reference_c": 19.8,
+    "temperature_c": 19.8,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000819",
+    "reference_c": 19.9,
+    "temperature_c": 19.9,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000820",
+    "reference_c": 20.0,
+    "temperature_c": 20.0,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000821",
+    "reference_c": 20.1,
+    "temperature_c": 20.1,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000822",
+    "reference_c": 20.2,
+    "temperature_c": 20.2,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000823",
+    "reference_c": 20.3,
+    "temperature_c": 20.3,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000824",
+    "reference_c": 20.4,
+    "temperature_c": 20.4,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000825",
+    "reference_c": 20.5,
+    "temperature_c": 20.5,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000826",
+    "reference_c": 20.6,
+    "temperature_c": 20.6,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000827",
+    "reference_c": 20.7,
+    "temperature_c": 20.7,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000828",
+    "reference_c": 20.8,
+    "temperature_c": 20.8,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000829",
+    "reference_c": 20.9,
+    "temperature_c": 20.9,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000830",
+    "reference_c": 21.0,
+    "temperature_c": 21.0,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000831",
+    "reference_c": 21.1,
+    "temperature_c": 21.1,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000832",
+    "reference_c": 21.2,
+    "temperature_c": 21.2,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000833",
+    "reference_c": 21.3,
+    "temperature_c": 21.3,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000834",
+    "reference_c": 21.4,
+    "temperature_c": 21.4,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000835",
+    "reference_c": 21.5,
+    "temperature_c": 21.5,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000836",
+    "reference_c": 21.6,
+    "temperature_c": 21.6,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000837",
+    "reference_c": 21.7,
+    "temperature_c": 21.7,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000838",
+    "reference_c": 21.8,
+    "temperature_c": 21.8,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000839",
+    "reference_c": 21.9,
+    "temperature_c": 21.9,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000840",
+    "reference_c": 22.0,
+    "temperature_c": 22.0,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000841",
+    "reference_c": 22.1,
+    "temperature_c": 22.1,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000842",
+    "reference_c": 22.2,
+    "temperature_c": 22.2,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000843",
+    "reference_c": 22.3,
+    "temperature_c": 22.3,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000844",
+    "reference_c": 22.4,
+    "temperature_c": 22.4,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000845",
+    "reference_c": 22.5,
+    "temperature_c": 22.5,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000846",
+    "reference_c": 22.6,
+    "temperature_c": 22.6,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000847",
+    "reference_c": 22.7,
+    "temperature_c": 22.7,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000848",
+    "reference_c": 22.8,
+    "temperature_c": 22.8,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000849",
+    "reference_c": 22.9,
+    "temperature_c": 22.9,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000850",
+    "reference_c": 23.0,
+    "temperature_c": 23.0,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000851",
+    "reference_c": 23.1,
+    "temperature_c": 23.1,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000852",
+    "reference_c": 23.2,
+    "temperature_c": 23.2,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000853",
+    "reference_c": 23.3,
+    "temperature_c": 23.3,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000854",
+    "reference_c": 23.4,
+    "temperature_c": 23.4,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000855",
+    "reference_c": 23.5,
+    "temperature_c": 23.5,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000856",
+    "reference_c": 23.6,
+    "temperature_c": 23.6,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000857",
+    "reference_c": 23.7,
+    "temperature_c": 23.7,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000858",
+    "reference_c": 23.8,
+    "temperature_c": 23.8,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000859",
+    "reference_c": 23.9,
+    "temperature_c": 23.9,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000860",
+    "reference_c": 24.0,
+    "temperature_c": 24.0,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000861",
+    "reference_c": 24.1,
+    "temperature_c": 24.1,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000862",
+    "reference_c": 24.2,
+    "temperature_c": 24.2,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000863",
+    "reference_c": 24.3,
+    "temperature_c": 24.3,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000864",
+    "reference_c": 24.4,
+    "temperature_c": 24.4,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000865",
+    "reference_c": 24.5,
+    "temperature_c": 24.5,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000866",
+    "reference_c": 24.6,
+    "temperature_c": 24.6,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000867",
+    "reference_c": 24.7,
+    "temperature_c": 24.7,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000868",
+    "reference_c": 24.8,
+    "temperature_c": 24.8,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000869",
+    "reference_c": 24.9,
+    "temperature_c": 24.9,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000870",
+    "reference_c": 25.0,
+    "temperature_c": 25.0,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000871",
+    "reference_c": 25.1,
+    "temperature_c": 25.1,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000872",
+    "reference_c": 25.2,
+    "temperature_c": 25.2,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000873",
+    "reference_c": 25.3,
+    "temperature_c": 25.3,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000874",
+    "reference_c": 25.4,
+    "temperature_c": 25.4,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000875",
+    "reference_c": 25.5,
+    "temperature_c": 25.5,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000876",
+    "reference_c": 25.6,
+    "temperature_c": 25.6,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000877",
+    "reference_c": 25.7,
+    "temperature_c": 25.7,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000878",
+    "reference_c": 25.8,
+    "temperature_c": 25.8,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000879",
+    "reference_c": 25.9,
+    "temperature_c": 25.9,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000880",
+    "reference_c": 26.0,
+    "temperature_c": 26.0,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000881",
+    "reference_c": 26.1,
+    "temperature_c": 26.1,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000882",
+    "reference_c": 26.2,
+    "temperature_c": 26.2,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000883",
+    "reference_c": 26.3,
+    "temperature_c": 26.3,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000884",
+    "reference_c": 26.4,
+    "temperature_c": 26.4,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000885",
+    "reference_c": 26.5,
+    "temperature_c": 26.5,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000886",
+    "reference_c": 26.6,
+    "temperature_c": 26.6,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000887",
+    "reference_c": 26.7,
+    "temperature_c": 26.7,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000888",
+    "reference_c": 26.8,
+    "temperature_c": 26.8,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000889",
+    "reference_c": 26.9,
+    "temperature_c": 26.9,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000890",
+    "reference_c": 27.0,
+    "temperature_c": 27.0,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000891",
+    "reference_c": 27.1,
+    "temperature_c": 27.1,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000892",
+    "reference_c": 27.2,
+    "temperature_c": 27.2,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000893",
+    "reference_c": 27.3,
+    "temperature_c": 27.3,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000894",
+    "reference_c": 27.4,
+    "temperature_c": 27.4,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000895",
+    "reference_c": 27.5,
+    "temperature_c": 27.5,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000896",
+    "reference_c": 27.6,
+    "temperature_c": 27.6,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000897",
+    "reference_c": 27.7,
+    "temperature_c": 27.7,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000898",
+    "reference_c": 27.8,
+    "temperature_c": 27.8,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000899",
+    "reference_c": 27.9,
+    "temperature_c": 27.9,
+    "absolute_error_c": 0.0
+  },
+  {
+    "record_id": "R000900",
+    "reference_c": 18.0,
+    "temperature_c": 18.0,
+    "absolute_error_c": 0.0
+  }
+]

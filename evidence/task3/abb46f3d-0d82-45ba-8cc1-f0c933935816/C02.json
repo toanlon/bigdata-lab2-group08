@@ -1,0 +1,33 @@
+{
+  "check_id": "C02",
+  "pass": true,
+  "comparison": "Full logical rows, not Parquet bytes; physical provenance unchanged",
+  "baseline": {
+    "curated": "26b111679fb741e9e375905891b8a956ec5c7802cb7640e7d96f7b8528435af6",
+    "quarantine": "858fcbafe7759545e8e332582798c8366881703e38ade49346e45728b9facab7",
+    "duplicates": "c0149ddbe55231a0561d571a8ab75727b7442f5bfcdc4a6d9ec99e9c6d56c7c9",
+    "winners": "92654fbaf774b7b1aec726316fc2bd414c322f37b8590bfb551ae3933ff10a93"
+  },
+  "replays": [
+    {
+      "case": "reverse_source_enumeration",
+      "logical_hashes": {
+        "curated": "26b111679fb741e9e375905891b8a956ec5c7802cb7640e7d96f7b8528435af6",
+        "quarantine": "858fcbafe7759545e8e332582798c8366881703e38ade49346e45728b9facab7",
+        "duplicates": "c0149ddbe55231a0561d571a8ab75727b7442f5bfcdc4a6d9ec99e9c6d56c7c9",
+        "winners": "92654fbaf774b7b1aec726316fc2bd414c322f37b8590bfb551ae3933ff10a93"
+      },
+      "equal": true
+    },
+    {
+      "case": "shuffle_seed_20260209",
+      "logical_hashes": {
+        "curated": "26b111679fb741e9e375905891b8a956ec5c7802cb7640e7d96f7b8528435af6",
+        "quarantine": "858fcbafe7759545e8e332582798c8366881703e38ade49346e45728b9facab7",
+        "duplicates": "c0149ddbe55231a0561d571a8ab75727b7442f5bfcdc4a6d9ec99e9c6d56c7c9",
+        "winners": "92654fbaf774b7b1aec726316fc2bd414c322f37b8590bfb551ae3933ff10a93"
+      },
+      "equal": true
+    }
+  ]
+}

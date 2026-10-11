@@ -1,0 +1,72 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "artifacts": [
+    {
+      "path": "candidate/curated.parquet",
+      "sha256": "84e092ae12b886aa004db6f6b990a83db5306590faf44f0c80ba9fd3fbc165b9",
+      "bytes": 209699,
+      "staging_uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/curated.parquet"
+    },
+    {
+      "path": "candidate/duplicates.csv",
+      "sha256": "609707690b4f83f3642deea5e53dda3f03880f0025beaa2c565617f2f87191da",
+      "bytes": 59433,
+      "staging_uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/duplicates.csv"
+    },
+    {
+      "path": "candidate/quarantine.csv",
+      "sha256": "2001a318d27eed21887b251334d44dd4cd96fd6c4eef675d811a45c8121c880c",
+      "bytes": 183506,
+      "staging_uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/quarantine.csv"
+    }
+  ],
+  "schema": [
+    {
+      "name": "record_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "sensor_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "site",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_time_utc",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "ingest_time_utc",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "temperature_c",
+      "type": "DECIMAL(8,2)"
+    },
+    {
+      "name": "is_late",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "source_object",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_row",
+      "type": "BIGINT"
+    },
+    {
+      "name": "source_sha256",
+      "type": "VARCHAR"
+    }
+  ],
+  "counts": {
+    "raw_envelopes": 10205,
+    "candidate": 9610,
+    "exported_quarantine": 395,
+    "exported_duplicates": 200
+  },
+  "note": "Staging URIs are planned until stage-upload.json confirms uploaded bytes; this manifest excludes its own hash."
+}

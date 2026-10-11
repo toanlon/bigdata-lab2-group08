@@ -1,0 +1,10 @@
+-rw-r--r-- 1 1000 1000   252 Oct 10 08:31 /work/contract-review.json
+-rw-r--r-- 1 1000 1000  3.8K Oct 10 08:30 /work/contract.json
+-rw-r--r-- 1 1000 1000    80 Oct 10 08:30 /work/contract.sha256
+-rw-r--r-- 1 1000 1000  4.4M Oct 10 08:15 /work/envelopes.csv
+-rw-r--r-- 1 1000 1000   402 Oct 10 08:15 /work/input_inventory.json
+-rw-r--r-- 1 1000 1000  412K Oct 10 08:15 /work/snapshot/observations_a.csv
+-rw-r--r-- 1 1000 1000 1014K Oct 10 08:15 /work/snapshot/observations_b.jsonl
+-rw-r--r-- 1 1000 1000  1.4K Oct 10 08:15 /work/snapshot/qa_reference.csv
+-rw-r--r-- 1 1000 1000   256 Oct 10 08:15 /work/snapshot/sensors.csv
+-rw-r--r-- 1 1000 1000   796 Oct 10 08:14 /work/trusted_manifest.json

@@ -1,0 +1,56 @@
+{
+  "columns": [
+    {
+      "name": "record_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "sensor_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "site",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_time_utc",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "ingest_time_utc",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "temperature_c",
+      "type": "DECIMAL(8,2)"
+    },
+    {
+      "name": "is_late",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "source_object",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_row",
+      "type": "BIGINT"
+    },
+    {
+      "name": "source_sha256",
+      "type": "VARCHAR"
+    }
+  ],
+  "counts": {
+    "raw_envelopes": 10205,
+    "candidate": 9610,
+    "exported_quarantine": 395,
+    "exported_duplicates": 200
+  },
+  "retained_late_count": 200,
+  "fractions_of_physical_input": {
+    "candidate": 0.9416952474277315,
+    "exported_quarantine": 0.03870651641352278,
+    "exported_duplicates": 0.019598236158745713
+  }
+}

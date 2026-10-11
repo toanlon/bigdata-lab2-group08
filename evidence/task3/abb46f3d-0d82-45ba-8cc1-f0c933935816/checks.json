@@ -1,0 +1,335 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "pass": true,
+  "checks": [
+    {
+      "check_id": "C01",
+      "pass": true,
+      "counts": {
+        "raw_envelopes": 10205,
+        "candidate": 9610,
+        "exported_quarantine": 395,
+        "exported_duplicates": 200
+      },
+      "count_reconciliation": true,
+      "failures": {
+        "missing_physical_ids": [],
+        "extra_physical_ids": [],
+        "repeated_or_overlapping_physical_ids": [],
+        "repeated_curated_record_ids": []
+      },
+      "queries": {
+        "missing_physical_ids": "SELECT source_object,source_row::BIGINT source_row FROM raw_envelopes EXCEPT SELECT source_object,source_row FROM output_ids",
+        "extra_physical_ids": "SELECT source_object,source_row FROM output_ids EXCEPT SELECT source_object,source_row::BIGINT FROM raw_envelopes",
+        "repeated_or_overlapping_physical_ids": "SELECT source_object,source_row,count(*) n FROM output_ids GROUP BY 1,2 HAVING count(*)<>1",
+        "repeated_curated_record_ids": "SELECT record_id,count(*) n FROM candidate GROUP BY 1 HAVING count(*)<>1"
+      }
+    },
+    {
+      "check_id": "C02",
+      "pass": true,
+      "comparison": "Full logical rows, not Parquet bytes; physical provenance unchanged",
+      "baseline": {
+        "curated": "26b111679fb741e9e375905891b8a956ec5c7802cb7640e7d96f7b8528435af6",
+        "quarantine": "858fcbafe7759545e8e332582798c8366881703e38ade49346e45728b9facab7",
+        "duplicates": "c0149ddbe55231a0561d571a8ab75727b7442f5bfcdc4a6d9ec99e9c6d56c7c9",
+        "winners": "92654fbaf774b7b1aec726316fc2bd414c322f37b8590bfb551ae3933ff10a93"
+      },
+      "replays": [
+        {
+          "case": "reverse_source_enumeration",
+          "logical_hashes": {
+            "curated": "26b111679fb741e9e375905891b8a956ec5c7802cb7640e7d96f7b8528435af6",
+            "quarantine": "858fcbafe7759545e8e332582798c8366881703e38ade49346e45728b9facab7",
+            "duplicates": "c0149ddbe55231a0561d571a8ab75727b7442f5bfcdc4a6d9ec99e9c6d56c7c9",
+            "winners": "92654fbaf774b7b1aec726316fc2bd414c322f37b8590bfb551ae3933ff10a93"
+          },
+          "equal": true
+        },
+        {
+          "case": "shuffle_seed_20260209",
+          "logical_hashes": {
+            "curated": "26b111679fb741e9e375905891b8a956ec5c7802cb7640e7d96f7b8528435af6",
+            "quarantine": "858fcbafe7759545e8e332582798c8366881703e38ade49346e45728b9facab7",
+            "duplicates": "c0149ddbe55231a0561d571a8ab75727b7442f5bfcdc4a6d9ec99e9c6d56c7c9",
+            "winners": "92654fbaf774b7b1aec726316fc2bd414c322f37b8590bfb551ae3933ff10a93"
+          },
+          "equal": true
+        }
+      ]
+    },
+    {
+      "check_id": "C03",
+      "pass": true,
+      "expected": [
+        {
+          "name": "record_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "sensor_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "site",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "event_time_utc",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "ingest_time_utc",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "temperature_c",
+          "type": "DECIMAL(8,2)"
+        },
+        {
+          "name": "is_late",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "source_object",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "source_row",
+          "type": "BIGINT"
+        },
+        {
+          "name": "source_sha256",
+          "type": "VARCHAR"
+        }
+      ],
+      "observed": [
+        {
+          "name": "record_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "sensor_id",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "site",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "event_time_utc",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "ingest_time_utc",
+          "type": "TIMESTAMP"
+        },
+        {
+          "name": "temperature_c",
+          "type": "DECIMAL(8,2)"
+        },
+        {
+          "name": "is_late",
+          "type": "BOOLEAN"
+        },
+        {
+          "name": "source_object",
+          "type": "VARCHAR"
+        },
+        {
+          "name": "source_row",
+          "type": "BIGINT"
+        },
+        {
+          "name": "source_sha256",
+          "type": "VARCHAR"
+        }
+      ]
+    },
+    {
+      "check_id": "C04",
+      "pass": true,
+      "data_kind": "separate synthetic fixtures, never mixed into candidate",
+      "cases": [
+        {
+          "case_id": "F32_to_C0",
+          "expected_behavior": "32 F converts to 0.00 C and is retained",
+          "pass": true,
+          "observed": {
+            "curated": [
+              {
+                "record_id": "R000001",
+                "sensor_id": "S01",
+                "site": "fixture-site",
+                "event_time_utc": "2026-02-01T00:00:00",
+                "ingest_time_utc": "2026-02-01T00:01:00",
+                "temperature_c": 0.0,
+                "is_late": false,
+                "source_object": "fixture://observations",
+                "source_row": 1,
+                "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+              }
+            ],
+            "quarantine": [],
+            "duplicates": []
+          }
+        },
+        {
+          "case_id": "unsupported_K",
+          "expected_behavior": "Unsupported unit rejected, never assumed Celsius",
+          "pass": true,
+          "observed": {
+            "curated": [],
+            "quarantine": [
+              {
+                "source_object": "fixture://observations",
+                "source_row": 2,
+                "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+                "record_id": "R000002",
+                "sensor_id": "S01",
+                "event_time": "2026-02-01T00:00:00Z",
+                "ingest_time": "2026-02-01T00:01:00Z",
+                "reading": "10",
+                "unit": "K",
+                "operator_email": "",
+                "raw_payload": "{}",
+                "primary_reason": "UNIT",
+                "all_reasons": "[\"UNIT\"]"
+              }
+            ],
+            "duplicates": []
+          }
+        },
+        {
+          "case_id": "nonfinite_NaN",
+          "expected_behavior": "Nonfinite numeric input rejected before conversion/rounding",
+          "pass": true,
+          "observed": {
+            "curated": [],
+            "quarantine": [
+              {
+                "source_object": "fixture://observations",
+                "source_row": 3,
+                "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+                "record_id": "R000003",
+                "sensor_id": "S01",
+                "event_time": "2026-02-01T00:00:00Z",
+                "ingest_time": "2026-02-01T00:01:00Z",
+                "reading": "NaN",
+                "unit": "C",
+                "operator_email": "",
+                "raw_payload": "{}",
+                "primary_reason": "NUMERIC",
+                "all_reasons": "[\"NUMERIC\"]"
+              }
+            ],
+            "duplicates": []
+          }
+        },
+        {
+          "case_id": "blank_optional_email",
+          "expected_behavior": "Optional blank email does not reject a row; release schema omits it",
+          "pass": true,
+          "observed": {
+            "curated": [
+              {
+                "record_id": "R000004",
+                "sensor_id": "S01",
+                "site": "fixture-site",
+                "event_time_utc": "2026-02-01T00:00:00",
+                "ingest_time_utc": "2026-02-01T00:01:00",
+                "temperature_c": 10.0,
+                "is_late": false,
+                "source_object": "fixture://observations",
+                "source_row": 4,
+                "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+              }
+            ],
+            "quarantine": [],
+            "duplicates": []
+          }
+        },
+        {
+          "case_id": "newer_invalid_no_fallback",
+          "expected_behavior": "Newer invalid winner quarantined; older valid row remains SUPERSEDED",
+          "pass": true,
+          "observed": {
+            "curated": [],
+            "quarantine": [
+              {
+                "source_object": "fixture://observations",
+                "source_row": 6,
+                "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+                "record_id": "R000005",
+                "sensor_id": "S01",
+                "event_time": "2026-02-01T00:00:00Z",
+                "ingest_time": "2026-02-01T00:02:00Z",
+                "reading": "100",
+                "unit": "C",
+                "operator_email": "",
+                "raw_payload": "{}",
+                "primary_reason": "RANGE",
+                "all_reasons": "[\"RANGE\"]"
+              }
+            ],
+            "duplicates": [
+              {
+                "source_object": "fixture://observations",
+                "source_row": 5,
+                "source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+                "record_id": "R000005",
+                "ingest_time_utc": "2026-02-01T00:01:00",
+                "winner_source_object": "fixture://observations",
+                "winner_source_row": 6,
+                "winner_source_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+                "reason": "SUPERSEDED"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "check_id": "C05",
+      "pass": true,
+      "evaluations": [
+        {
+          "rule_id": "Q_CHRONOLOGY",
+          "pass": true
+        },
+        {
+          "rule_id": "Q_REQUIRED",
+          "pass": true
+        },
+        {
+          "rule_id": "Q_SENSOR",
+          "pass": true
+        },
+        {
+          "rule_id": "Q_TIMELY",
+          "pass": true
+        },
+        {
+          "rule_id": "Q_UNIQUE",
+          "pass": true
+        },
+        {
+          "rule_id": "Q_VALUE",
+          "pass": true
+        },
+        {
+          "rule_id": "Q_REFERENCE_COVERAGE",
+          "pass": true
+        },
+        {
+          "rule_id": "Q_REFERENCE_AGREEMENT",
+          "pass": true
+        }
+      ],
+      "curated_count": 9610,
+      "retained_late_count": 200,
+      "late_flag_mismatches": 0,
+      "invalid_source_winners_released": 0
+    }
+  ]
+}

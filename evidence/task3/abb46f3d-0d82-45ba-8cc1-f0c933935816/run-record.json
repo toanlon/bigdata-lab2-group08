@@ -1,0 +1,179 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "start_time": "2026-10-11T07:16:35.877883+00:00",
+  "operator": "vượng",
+  "image_ref": "us-east5-docker.pkg.dev/bigdata-lab1-group08/bigdata-lab/lab2-runtime@sha256:532a5c71a098bcf167817467d3cc8d5aa74c042031f5fdb139726f90a850ab74",
+  "store_id": "bd-g08-objects",
+  "status": "COMPLETED",
+  "publication_approved": false,
+  "python_version": "3.11.17 (main, Oct  6 2026, 02:01:58) [GCC 12.2.0]",
+  "duckdb_version": "1.4.5",
+  "as_of": "2026-02-09T00:00:00Z",
+  "contract_sha256": "edf8daf1446bba565c34e0c35eaa5aa8945d9b00d39fad3d87a083defc165b47",
+  "contract_review_sha256": "e7d89539c3b4f89a1cff5149cbcab3c7d5d71b803dc3d6ca2af3e4b2ae869246",
+  "contract_review": {
+    "contract_file": "contract.json",
+    "contract_sha256": "edf8daf1446bba565c34e0c35eaa5aa8945d9b00d39fad3d87a083defc165b47",
+    "author": "vượng",
+    "reviewer": "tú",
+    "approved_at": "2026-10-10T08:26:44.286373+00:00",
+    "decision": "APPROVED"
+  },
+  "input_manifest_sha256": "77dacfdb5a8b4e82fb2316990972de731a51b31f9fc052d739d0dea78e992331",
+  "envelope_sha256": "28d633f05801d9c4e4a4de02a6a71d8227152a26df4e22151f2b29cda9f50cc7",
+  "input_inventory_sha256": "b5bddaba5902e2bdbe60fe0fc849bd19bcfca1d29851f579e2946ff0b9191b21",
+  "code_files": [
+    {
+      "filename": "run_task3.py",
+      "sha256": "95bbaf01d5c225618e56c61842b0a2b4be5ecbf96798ecbc060721d2b1e56019"
+    },
+    {
+      "filename": "task3/curate.sql",
+      "sha256": "0dceeab16e2b89eba011cd7d28071dceb7117bd14b095f7e7e113d6fea1d55de"
+    },
+    {
+      "filename": "task3/quality.sql",
+      "sha256": "f40ea16c474fb7de5c81f0e0d340190460032b66b48ea3b0176b97a1ce3e1552"
+    },
+    {
+      "filename": "task3/typed.sql",
+      "sha256": "07424deb05a174aabf385e02cbeadefaad18a137bb96ae25209523d66cd8f2dc"
+    }
+  ],
+  "code_sha256": "b7689a4367f678d4e41fc2fdc7114b6b97890bdbd48881bc59dfea4da8d75475",
+  "end_time": "2026-10-11T07:17:37.244654+00:00",
+  "counts": {
+    "raw_envelopes": 10205,
+    "candidate": 9610,
+    "exported_quarantine": 395,
+    "exported_duplicates": 200
+  },
+  "outputs": [
+    {
+      "path": "C01.json",
+      "sha256": "0b562a2b352ba5acc9b816e90fb08315a8bc5a81a2e7f805c81c7b92cd8a60d2",
+      "bytes": 941
+    },
+    {
+      "path": "C02.json",
+      "sha256": "91e15499b9064348087ff1030d29f9920bfc5a55d9899e47ada169aae15eba94",
+      "bytes": 1429
+    },
+    {
+      "path": "C03.json",
+      "sha256": "5b1a2e3e9717f0c92a4043b6b18ce200abbc69b683ff552e5e3b71c1039d9567",
+      "bytes": 1410
+    },
+    {
+      "path": "C04.json",
+      "sha256": "c9b9ec081f055366650dad44e1205532173da7c14cab9acbc44ebedb7e158393",
+      "bytes": 4701
+    },
+    {
+      "path": "C05.json",
+      "sha256": "214b6941364bc9d97b866f297cd8e5a95441d630ed36ace77c0b12365888c220",
+      "bytes": 705
+    },
+    {
+      "path": "artifact-manifest.json",
+      "sha256": "ae195ca6be929fd00fc35761835714a99fc5fc25715a1f36174c0c24bed7d8b0",
+      "bytes": 1851
+    },
+    {
+      "path": "candidate/curated.parquet",
+      "sha256": "84e092ae12b886aa004db6f6b990a83db5306590faf44f0c80ba9fd3fbc165b9",
+      "bytes": 209699
+    },
+    {
+      "path": "candidate/duplicates.csv",
+      "sha256": "609707690b4f83f3642deea5e53dda3f03880f0025beaa2c565617f2f87191da",
+      "bytes": 59433
+    },
+    {
+      "path": "candidate/quarantine.csv",
+      "sha256": "2001a318d27eed21887b251334d44dd4cd96fd6c4eef675d811a45c8121c880c",
+      "bytes": 183506
+    },
+    {
+      "path": "checks.json",
+      "sha256": "3e1add85dfe25ea839e71548980b1816c7369bbb9bf454d4d9802bffbde89ad2",
+      "bytes": 10596
+    },
+    {
+      "path": "code/run_task3.py",
+      "sha256": "95bbaf01d5c225618e56c61842b0a2b4be5ecbf96798ecbc060721d2b1e56019",
+      "bytes": 26471
+    },
+    {
+      "path": "code/task3/curate.sql",
+      "sha256": "0dceeab16e2b89eba011cd7d28071dceb7117bd14b095f7e7e113d6fea1d55de",
+      "bytes": 4141
+    },
+    {
+      "path": "code/task3/quality.sql",
+      "sha256": "f40ea16c474fb7de5c81f0e0d340190460032b66b48ea3b0176b97a1ce3e1552",
+      "bytes": 2095
+    },
+    {
+      "path": "code/task3/typed.sql",
+      "sha256": "07424deb05a174aabf385e02cbeadefaad18a137bb96ae25209523d66cd8f2dc",
+      "bytes": 737
+    },
+    {
+      "path": "inputs/contract-review.json",
+      "sha256": "e7d89539c3b4f89a1cff5149cbcab3c7d5d71b803dc3d6ca2af3e4b2ae869246",
+      "bytes": 252
+    },
+    {
+      "path": "inputs/contract.json",
+      "sha256": "edf8daf1446bba565c34e0c35eaa5aa8945d9b00d39fad3d87a083defc165b47",
+      "bytes": 3837
+    },
+    {
+      "path": "inputs/contract.sha256",
+      "sha256": "49a58c234aec88667b84833b1ea79ec00b2b87db8a3b74ce498f070d02834fb8",
+      "bytes": 80
+    },
+    {
+      "path": "inputs/input_inventory.json",
+      "sha256": "b5bddaba5902e2bdbe60fe0fc849bd19bcfca1d29851f579e2946ff0b9191b21",
+      "bytes": 402
+    },
+    {
+      "path": "inputs/trusted_manifest.json",
+      "sha256": "77dacfdb5a8b4e82fb2316990972de731a51b31f9fc052d739d0dea78e992331",
+      "bytes": 796
+    },
+    {
+      "path": "lineage.jsonl",
+      "sha256": "3beac8194d398e3de147ae0b37b17521fda0771556c41022c961b002d79c1814",
+      "bytes": 2334
+    },
+    {
+      "path": "quality_after.json",
+      "sha256": "da625a00a3914e30e818e7175f6c142a8633ef4c0ecdf60b969884c277c8e867",
+      "bytes": 3536
+    },
+    {
+      "path": "quarantine-summary.json",
+      "sha256": "675b6ac5c69019176910b9c0d9606968ac2c4ca162d3b439a2a53e4bfc6c9bb6",
+      "bytes": 586
+    },
+    {
+      "path": "reference-comparison.json",
+      "sha256": "ecb33d56e4aa792f881c1cc952fd06cdedbf101e1977258192c2927295064d50",
+      "bytes": 11703
+    },
+    {
+      "path": "schema-counts.json",
+      "sha256": "f8d5e51044aae89346f03a18cf69f1fa647651e3bae5097fd603ec13230fe77f",
+      "bytes": 1023
+    },
+    {
+      "path": "source-integrity.json",
+      "sha256": "c675eb3fb29499d870b1f7c1cb708f668686cf61a3c6118eb89eb7dedaac5891",
+      "bytes": 568
+    }
+  ],
+  "lineage_validation": "NOT_EVALUATED: formal OpenLineage validation belongs to subsequent lineage work"
+}

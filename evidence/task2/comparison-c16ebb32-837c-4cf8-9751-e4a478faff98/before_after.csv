@@ -1,0 +1,9 @@
+﻿rule_id,before_numerator,before_denominator,before_value,before_cohort,before_status,before_threshold,after_numerator,after_denominator,after_value,after_cohort,after_status,after_threshold,after_meets_threshold
+Q_REQUIRED,9850,9960,0.9889558232931727,W: winners before validity filtering,EVALUATED,1.0,9610,9610,1.0,All exported candidate rows,EVALUATED,1.0,True
+Q_VALUE,9710,9960,0.9748995983935743,W: winners before validity filtering,EVALUATED,1.0,9610,9610,1.0,All exported candidate rows,EVALUATED,1.0,True
+Q_SENSOR,9930,9960,0.9969879518072289,W: winners before validity filtering,EVALUATED,1.0,9610,9610,1.0,All exported candidate rows,EVALUATED,1.0,True
+Q_CHRONOLOGY,9890,9960,0.9929718875502008,W: winners before validity filtering,EVALUATED,1.0,9610,9610,1.0,All exported candidate rows,EVALUATED,1.0,True
+Q_UNIQUE,9960,10160,0.9803149606299213,Key-eligible physical records before deduplication,EVALUATED,1.0,9610,9610,1.0,All exported candidate rows,EVALUATED,1.0,True
+Q_TIMELY,9690,9890,0.9797775530839231,W: chronologically valid winners only,EVALUATED,0.95,9410,9610,0.9791883454734651,Chronologically valid exported candidate rows,EVALUATED,0.95,True
+Q_REFERENCE_COVERAGE,,,,,,,100,100,1.0,All frozen reference IDs,EVALUATED,1.0,True
+Q_REFERENCE_AGREEMENT,,,,,,,95,100,0.95,Matched frozen reference IDs,EVALUATED,0.95,True

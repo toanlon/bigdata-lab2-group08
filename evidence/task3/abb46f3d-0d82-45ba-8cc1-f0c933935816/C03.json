@@ -1,0 +1,88 @@
+{
+  "check_id": "C03",
+  "pass": true,
+  "expected": [
+    {
+      "name": "record_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "sensor_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "site",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_time_utc",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "ingest_time_utc",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "temperature_c",
+      "type": "DECIMAL(8,2)"
+    },
+    {
+      "name": "is_late",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "source_object",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_row",
+      "type": "BIGINT"
+    },
+    {
+      "name": "source_sha256",
+      "type": "VARCHAR"
+    }
+  ],
+  "observed": [
+    {
+      "name": "record_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "sensor_id",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "site",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "event_time_utc",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "ingest_time_utc",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "temperature_c",
+      "type": "DECIMAL(8,2)"
+    },
+    {
+      "name": "is_late",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "source_object",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "source_row",
+      "type": "BIGINT"
+    },
+    {
+      "name": "source_sha256",
+      "type": "VARCHAR"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "key": "observations_a.csv",
+    "sha256": "5157418915d867980fac8d84551a8b856bba1669ca2e33cef91a15ee82101aea",
+    "bytes": 421028
+  },
+  {
+    "key": "observations_b.jsonl",
+    "sha256": "3072ad0b725ea3763ad4d1a7c744465f997614892dd1460f9cd815094ec61b70",
+    "bytes": 1037439
+  },
+  {
+    "key": "qa_reference.csv",
+    "sha256": "129463c2a4e63f2dabfa2a5dd31b92e4fe4858d2415d3c7ef495cc6c6d7b65c2",
+    "bytes": 1423
+  },
+  {
+    "key": "sensors.csv",
+    "sha256": "02c390e127c37b9d12e9ca156eae23a450ad1ae037001cddd9651bb6516b9bde",
+    "bytes": 256
+  }
+]

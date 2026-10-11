@@ -1,0 +1,17 @@
+{
+  "before_run_id": "2ecccd58-0c78-4b4f-97cc-2f417b8c0217",
+  "after_run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "purpose": "Task 2 after-quality evidence from Task 3",
+  "files": [
+    {
+      "file": "quality_after.json",
+      "source_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/quality_after.json",
+      "sha256": "da625a00a3914e30e818e7175f6c142a8633ef4c0ecdf60b969884c277c8e867"
+    },
+    {
+      "file": "reference-comparison.json",
+      "source_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/reference-comparison.json",
+      "sha256": "ecb33d56e4aa792f881c1cc952fd06cdedbf101e1977258192c2927295064d50"
+    }
+  ]
+}

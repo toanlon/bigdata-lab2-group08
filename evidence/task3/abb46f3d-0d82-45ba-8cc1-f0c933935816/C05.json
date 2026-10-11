@@ -1,0 +1,42 @@
+{
+  "check_id": "C05",
+  "pass": true,
+  "evaluations": [
+    {
+      "rule_id": "Q_CHRONOLOGY",
+      "pass": true
+    },
+    {
+      "rule_id": "Q_REQUIRED",
+      "pass": true
+    },
+    {
+      "rule_id": "Q_SENSOR",
+      "pass": true
+    },
+    {
+      "rule_id": "Q_TIMELY",
+      "pass": true
+    },
+    {
+      "rule_id": "Q_UNIQUE",
+      "pass": true
+    },
+    {
+      "rule_id": "Q_VALUE",
+      "pass": true
+    },
+    {
+      "rule_id": "Q_REFERENCE_COVERAGE",
+      "pass": true
+    },
+    {
+      "rule_id": "Q_REFERENCE_AGREEMENT",
+      "pass": true
+    }
+  ],
+  "curated_count": 9610,
+  "retained_late_count": 200,
+  "late_flag_mismatches": 0,
+  "invalid_source_winners_released": 0
+}
