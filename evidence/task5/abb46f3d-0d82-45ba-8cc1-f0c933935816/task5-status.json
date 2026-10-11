@@ -1,0 +1,18 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "probe_count": 8,
+  "p01_requires_lineage_reconciliation": true,
+  "p02_p08_rejected_as_expected": true,
+  "candidate_consumer_readback_verified": true,
+  "raw_access_denial_verified": false,
+  "analyst_identity_tested": false,
+  "access_policy_found_in_searched_paths": false,
+  "publication_approved": false,
+  "blocking_items": [
+    "Independent owner review has not been recorded.",
+    "Lineage URI mapping remains unproven.",
+    "Raw GET was successful with curate pod credentials.",
+    "No separate analyst identity or access-denial policy was verified.",
+    "No approved release manifest exists."
+  ]
+}

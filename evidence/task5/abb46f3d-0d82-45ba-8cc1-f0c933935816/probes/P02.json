@@ -1,0 +1,14 @@
+{
+  "probe_id": "P02",
+  "mutation": "Set one temperature_c to 100.00 in disposable copy",
+  "row_count": 9610,
+  "out_of_range_count": 1,
+  "min_temperature": "18.00",
+  "max_temperature": "100.00",
+  "expected": "REJECT",
+  "actual": "REJECT",
+  "reason_codes": [
+    "VALUE"
+  ],
+  "publication_approved": false
+}

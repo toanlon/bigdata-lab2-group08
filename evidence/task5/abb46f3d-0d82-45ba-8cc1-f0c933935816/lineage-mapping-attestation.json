@@ -1,0 +1,43 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "created_at_utc": "2026-10-11T14:23:00.924809+00:00",
+  "type": "lineage_output_content_reconciliation",
+  "method": "Compare local artifact SHA-256 and byte count with successful S3 GET read-back",
+  "mappings": [
+    {
+      "artifact": "curated.parquet",
+      "lineage_uri": "file:///work/runs/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/curated.parquet",
+      "staging_uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/curated.parquet",
+      "sha256": "84e092ae12b886aa004db6f6b990a83db5306590faf44f0c80ba9fd3fbc165b9",
+      "bytes": 209699,
+      "content_identity_verified": true,
+      "uri_strings_identical": false
+    },
+    {
+      "artifact": "duplicates.csv",
+      "lineage_uri": "file:///work/runs/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/duplicates.csv",
+      "staging_uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/duplicates.csv",
+      "sha256": "609707690b4f83f3642deea5e53dda3f03880f0025beaa2c565617f2f87191da",
+      "bytes": 59433,
+      "content_identity_verified": true,
+      "uri_strings_identical": false
+    },
+    {
+      "artifact": "quarantine.csv",
+      "lineage_uri": "file:///work/runs/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/quarantine.csv",
+      "staging_uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/quarantine.csv",
+      "sha256": "2001a318d27eed21887b251334d44dd4cd96fd6c4eef675d811a45c8121c880c",
+      "bytes": 183506,
+      "content_identity_verified": true,
+      "uri_strings_identical": false
+    }
+  ],
+  "all_content_identity_verified": true,
+  "original_lineage_modified": false,
+  "limitations": [
+    "Matching SHA-256 and byte count support content equivalence.",
+    "The original file:// URI and staging s3:// URI are not identical.",
+    "This attestation does not independently prove the historical upload operation or authorize publication."
+  ],
+  "publication_approved": false
+}

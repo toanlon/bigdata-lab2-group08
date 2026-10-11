@@ -1,0 +1,14 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "probe_id": "P05",
+  "mutation": "Remove steward from disposable catalog metadata",
+  "dataset_id": "curated-candidate",
+  "steward_present": false,
+  "expected": "REJECT",
+  "actual": "REJECT",
+  "reason_codes": [
+    "METADATA"
+  ],
+  "original_catalog_modified": false,
+  "publication_approved": false
+}

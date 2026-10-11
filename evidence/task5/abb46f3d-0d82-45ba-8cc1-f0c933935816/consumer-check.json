@@ -1,0 +1,25 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "publication_approved": false,
+  "candidate_check": {
+    "key": "lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/curated.parquet",
+    "get_status": "SUCCESS",
+    "sha256": "84e092ae12b886aa004db6f6b990a83db5306590faf44f0c80ba9fd3fbc165b9",
+    "bytes": 209699,
+    "row_count": 9610,
+    "hash_match": true,
+    "bytes_match": true,
+    "row_count_match": true
+  },
+  "raw_access_check": {
+    "key": "lab2/inputs/batch-01/observations_a.csv",
+    "tested_from": "curate pod",
+    "get_status": "SUCCESS",
+    "bytes_read_for_test": 64,
+    "access_denied": false
+  },
+  "limitations": [
+    "Raw access result reflects the credentials used by the curate pod, not necessarily the analyst consumer identity.",
+    "No approved release manifest exists; publication remains unapproved."
+  ]
+}

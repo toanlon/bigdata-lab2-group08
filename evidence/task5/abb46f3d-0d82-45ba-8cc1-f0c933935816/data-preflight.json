@@ -1,0 +1,75 @@
+{
+  "checked_at_utc": "2026-10-11T14:10:44.519072+00:00",
+  "file": "/tmp/task5/original/curated.parquet",
+  "row_count": 9610,
+  "required_field_null_counts": {
+    "record_id": 0,
+    "sensor_id": 0,
+    "event_time_utc": 0,
+    "ingest_time_utc": 0,
+    "temperature_c": 0,
+    "is_late": 0,
+    "source_object": 0,
+    "source_row": 0,
+    "source_sha256": 0
+  },
+  "duplicate_record_id_groups": 0,
+  "temperature_out_of_range_count": 0,
+  "event_after_ingest_count": 0,
+  "invalid_source_sha256_count": 0,
+  "invalid_record_id_count": 0,
+  "schema": [
+    {
+      "name": "record_id",
+      "type": "VARCHAR",
+      "nullable": "YES"
+    },
+    {
+      "name": "sensor_id",
+      "type": "VARCHAR",
+      "nullable": "YES"
+    },
+    {
+      "name": "site",
+      "type": "VARCHAR",
+      "nullable": "YES"
+    },
+    {
+      "name": "event_time_utc",
+      "type": "TIMESTAMP",
+      "nullable": "YES"
+    },
+    {
+      "name": "ingest_time_utc",
+      "type": "TIMESTAMP",
+      "nullable": "YES"
+    },
+    {
+      "name": "temperature_c",
+      "type": "DECIMAL(8,2)",
+      "nullable": "YES"
+    },
+    {
+      "name": "is_late",
+      "type": "BOOLEAN",
+      "nullable": "YES"
+    },
+    {
+      "name": "source_object",
+      "type": "VARCHAR",
+      "nullable": "YES"
+    },
+    {
+      "name": "source_row",
+      "type": "BIGINT",
+      "nullable": "YES"
+    },
+    {
+      "name": "source_sha256",
+      "type": "VARCHAR",
+      "nullable": "YES"
+    }
+  ],
+  "issues": [],
+  "status": "PASS"
+}

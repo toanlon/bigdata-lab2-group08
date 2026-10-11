@@ -1,0 +1,16 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "probe_id": "P06",
+  "mutation": "Alter claimed SHA-256 in disposable manifest copy",
+  "target_object": "observations_a.csv",
+  "trusted_sha256": "5157418915d867980fac8d84551a8b856bba1669ca2e33cef91a15ee82101aea",
+  "tampered_claimed_sha256": "0157418915d867980fac8d84551a8b856bba1669ca2e33cef91a15ee82101aea",
+  "claimed_hash_mismatch": true,
+  "expected": "REJECT",
+  "actual": "REJECT",
+  "reason_codes": [
+    "INPUT_INTEGRITY"
+  ],
+  "trusted_manifest_modified": false,
+  "publication_approved": false
+}

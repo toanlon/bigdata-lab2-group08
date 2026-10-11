@@ -1,0 +1,13 @@
+{
+  "probe_id": "P04",
+  "mutation": "Append one duplicate business record",
+  "row_count": 9611,
+  "duplicate_record_id_count": 1,
+  "copies_of_duplicated_record_id": 2,
+  "expected": "REJECT",
+  "actual": "REJECT",
+  "reason_codes": [
+    "UNIQUENESS"
+  ],
+  "publication_approved": false
+}

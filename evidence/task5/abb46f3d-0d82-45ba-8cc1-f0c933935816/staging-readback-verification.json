@@ -1,0 +1,41 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "checked_at_utc": "2026-10-11T13:58:34.024665+00:00",
+  "method": "S3 GET and streamed SHA-256",
+  "results": [
+    {
+      "artifact": "curated.parquet",
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/curated.parquet",
+      "expected_sha256": "84e092ae12b886aa004db6f6b990a83db5306590faf44f0c80ba9fd3fbc165b9",
+      "actual_sha256": "84e092ae12b886aa004db6f6b990a83db5306590faf44f0c80ba9fd3fbc165b9",
+      "expected_bytes": 209699,
+      "actual_bytes": 209699,
+      "hash_match": true,
+      "bytes_match": true,
+      "get_succeeded": true
+    },
+    {
+      "artifact": "duplicates.csv",
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/duplicates.csv",
+      "expected_sha256": "609707690b4f83f3642deea5e53dda3f03880f0025beaa2c565617f2f87191da",
+      "actual_sha256": "609707690b4f83f3642deea5e53dda3f03880f0025beaa2c565617f2f87191da",
+      "expected_bytes": 59433,
+      "actual_bytes": 59433,
+      "hash_match": true,
+      "bytes_match": true,
+      "get_succeeded": true
+    },
+    {
+      "artifact": "quarantine.csv",
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/quarantine.csv",
+      "expected_sha256": "2001a318d27eed21887b251334d44dd4cd96fd6c4eef675d811a45c8121c880c",
+      "actual_sha256": "2001a318d27eed21887b251334d44dd4cd96fd6c4eef675d811a45c8121c880c",
+      "expected_bytes": 183506,
+      "actual_bytes": 183506,
+      "hash_match": true,
+      "bytes_match": true,
+      "get_succeeded": true
+    }
+  ],
+  "all_verified": true
+}

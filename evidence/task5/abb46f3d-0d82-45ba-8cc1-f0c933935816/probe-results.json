@@ -1,0 +1,133 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "probe_count": 8,
+  "all_probe_evidence_present": true,
+  "publication_approved": false,
+  "publication_note": "Not approved: independent owner review and lineage URI reconciliation remain unresolved.",
+  "probes": [
+    {
+      "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+      "probe_id": "P01",
+      "checked_at_utc": "2026-10-11T14:22:06.917088+00:00",
+      "expected": "PASS",
+      "actual": "PASS_WITH_RECONCILIATION_NOTE",
+      "reason_codes": [],
+      "issues": [
+        "LINEAGE: original output URIs differ from catalog staging URIs; reconciliation evidence is required"
+      ],
+      "quality_metrics_pass": true,
+      "metadata_present": true,
+      "source_integrity_evidence_complete": true,
+      "lineage_content_hashes_match_staging": true,
+      "lineage_uri_mapping_proven": false,
+      "publication_approved": false,
+      "lineage_reconciliation_note": "All three artifact contents match by SHA-256 and byte count; original file:// and staging s3:// URIs differ. This is a content reconciliation, not proof of historical upload.",
+      "rechecked_at_utc": "2026-10-11T14:23:55.411783+00:00"
+    },
+    {
+      "probe_id": "P02",
+      "mutation": "Set one temperature_c to 100.00 in disposable copy",
+      "row_count": 9610,
+      "out_of_range_count": 1,
+      "min_temperature": "18.00",
+      "max_temperature": "100.00",
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "reason_codes": [
+        "VALUE"
+      ],
+      "publication_approved": false
+    },
+    {
+      "probe_id": "P03",
+      "mutation": "Set one required temperature_c to NULL in disposable copy",
+      "row_count": 9610,
+      "temperature_c_null_count": 1,
+      "out_of_range_count": 0,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "reason_codes": [
+        "REQUIRED"
+      ],
+      "null_count_preserved": true,
+      "publication_approved": false
+    },
+    {
+      "probe_id": "P04",
+      "mutation": "Append one duplicate business record",
+      "row_count": 9611,
+      "duplicate_record_id_count": 1,
+      "copies_of_duplicated_record_id": 2,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "reason_codes": [
+        "UNIQUENESS"
+      ],
+      "publication_approved": false
+    },
+    {
+      "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+      "probe_id": "P05",
+      "mutation": "Remove steward from disposable catalog metadata",
+      "dataset_id": "curated-candidate",
+      "steward_present": false,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "reason_codes": [
+        "METADATA"
+      ],
+      "original_catalog_modified": false,
+      "publication_approved": false
+    },
+    {
+      "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+      "probe_id": "P06",
+      "mutation": "Alter claimed SHA-256 in disposable manifest copy",
+      "target_object": "observations_a.csv",
+      "trusted_sha256": "5157418915d867980fac8d84551a8b856bba1669ca2e33cef91a15ee82101aea",
+      "tampered_claimed_sha256": "0157418915d867980fac8d84551a8b856bba1669ca2e33cef91a15ee82101aea",
+      "claimed_hash_mismatch": true,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "reason_codes": [
+        "INPUT_INTEGRITY"
+      ],
+      "trusted_manifest_modified": false,
+      "publication_approved": false
+    },
+    {
+      "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+      "probe_id": "P07",
+      "mutation": "Remove curated.parquet from disposable COMPLETE.outputs",
+      "original_output_count": 3,
+      "mutated_output_count": 2,
+      "curated_output_present": false,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "reason_codes": [
+        "LINEAGE"
+      ],
+      "original_lineage_modified": false,
+      "publication_approved": false
+    },
+    {
+      "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+      "probe_id": "P08",
+      "mutation": "Remove QA sample ID R000810 from disposable candidate",
+      "removed_id": "R000810",
+      "candidate_rows_before": 9610,
+      "candidate_rows_after": 9609,
+      "removed_id_count_before": 1,
+      "removed_id_count_after": 0,
+      "qa_reference_rows": 100,
+      "matched_qa_ids_after": 99,
+      "coverage_ratio_after": 0.99,
+      "expected": "REJECT",
+      "actual": "REJECT",
+      "reason_codes": [
+        "COVERAGE"
+      ],
+      "publication_approved": false
+    }
+  ]
+}

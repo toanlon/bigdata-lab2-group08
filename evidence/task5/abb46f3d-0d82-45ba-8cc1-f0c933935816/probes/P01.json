@@ -1,0 +1,19 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "probe_id": "P01",
+  "checked_at_utc": "2026-10-11T14:22:06.917088+00:00",
+  "expected": "PASS",
+  "actual": "PASS_WITH_RECONCILIATION_NOTE",
+  "reason_codes": [],
+  "issues": [
+    "LINEAGE: original output URIs differ from catalog staging URIs; reconciliation evidence is required"
+  ],
+  "quality_metrics_pass": true,
+  "metadata_present": true,
+  "source_integrity_evidence_complete": true,
+  "lineage_content_hashes_match_staging": true,
+  "lineage_uri_mapping_proven": false,
+  "publication_approved": false,
+  "lineage_reconciliation_note": "All three artifact contents match by SHA-256 and byte count; original file:// and staging s3:// URIs differ. This is a content reconciliation, not proof of historical upload.",
+  "rechecked_at_utc": "2026-10-11T14:23:55.411783+00:00"
+}

@@ -1,0 +1,17 @@
+{
+  "checked_at_utc": "2026-10-11T14:12:30.599954+00:00",
+  "qa_reference_rows": 100,
+  "matched_candidate_ids": 100,
+  "missing_qa_ids": [],
+  "mismatch_count": 5,
+  "mismatch_ids": [
+    "R000810",
+    "R000811",
+    "R000812",
+    "R000813",
+    "R000814"
+  ],
+  "is_late_null_count": 0,
+  "coverage_ratio": 1.0,
+  "status": "PASS"
+}

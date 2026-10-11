@@ -1,0 +1,254 @@
+{
+  "datasets": [
+    {
+      "dataset_id": "raw-observations",
+      "title": "Raw Telemetry Observations Collection",
+      "purpose": "Original heterogeneous temperature telemetry intake",
+      "owner": "Data Ingestion Team",
+      "steward": "Data Engineer",
+      "classification": "Restricted",
+      "allowed_use": "synthetic teaching use",
+      "location": [
+        "s3://research-raw/lab2/inputs/batch-01/observations_a.csv",
+        "s3://research-raw/lab2/inputs/batch-01/observations_b.jsonl"
+      ],
+      "schema_version": "raw-v1",
+      "columns": [
+        {
+          "name": "record_id",
+          "type": "VARCHAR",
+          "unit": null,
+          "nullable": true,
+          "meaning": "Raw business ID or alias 'id'"
+        },
+        {
+          "name": "sensor_id",
+          "type": "VARCHAR",
+          "unit": null,
+          "nullable": true,
+          "meaning": "Raw sensor ID or alias 'sensor'"
+        },
+        {
+          "name": "event_time",
+          "type": "VARCHAR",
+          "unit": null,
+          "nullable": true,
+          "meaning": "Raw timestamp or alias 'timestamp'"
+        },
+        {
+          "name": "ingest_time",
+          "type": "VARCHAR",
+          "unit": null,
+          "nullable": true,
+          "meaning": "Raw arrival time or alias 'arrived_at'"
+        },
+        {
+          "name": "reading",
+          "type": "VARCHAR",
+          "unit": null,
+          "nullable": true,
+          "meaning": "Raw temperature reading or alias 'temperature'"
+        },
+        {
+          "name": "unit",
+          "type": "VARCHAR",
+          "unit": null,
+          "nullable": true,
+          "meaning": "Raw unit C/F or alias 'temperature_unit'"
+        },
+        {
+          "name": "operator_email",
+          "type": "VARCHAR",
+          "unit": null,
+          "nullable": true,
+          "meaning": "Restricted operator email or alias 'operator'"
+        }
+      ],
+      "as_of": "2026-02-09T00:00:00Z",
+      "row_count": 10205,
+      "input_manifest_sha256": "77dacfdb5a8b4e82fb2316990972de731a51b31f9fc052d739d0dea78e992331",
+      "contract_sha256": "edf8daf1446bba565c34e0c35eaa5aa8945d9b00d39fad3d87a083defc165b47",
+      "code_sha256": "b7689a4367f678d4e41fc2fdc7114b6b97890bdbd48881bc59dfea4da8d75475",
+      "quality_report": "evidence/task2/2ecccd58-0c78-4b4f-97cc-2f417b8c0217/quality_before.json",
+      "retention": {
+        "days": 30,
+        "start_basis": "retrieval_time",
+        "hold": false,
+        "dependent_release_ids": [],
+        "action": "dry-run only"
+      },
+      "provenance": {
+        "job_name": "stage_inputs",
+        "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816"
+      }
+    },
+    {
+      "dataset_id": "quarantine-records",
+      "title": "Quarantined Observation Records",
+      "purpose": "Restricted diagnostic ledger of invalid, malformed, or unparseable records",
+      "owner": "Data Quality Team",
+      "steward": "Quality Engineer",
+      "classification": "Restricted",
+      "allowed_use": "synthetic teaching use",
+      "location": [
+        "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/quarantine.csv"
+      ],
+      "schema_version": "quarantine-v1",
+      "columns": [
+        {
+          "name": "source_object",
+          "type": "VARCHAR",
+          "unit": null,
+          "nullable": false,
+          "meaning": "Source file URI"
+        },
+        {
+          "name": "source_row",
+          "type": "BIGINT",
+          "unit": null,
+          "nullable": false,
+          "meaning": "Source line or row ordinal"
+        },
+        {
+          "name": "source_sha256",
+          "type": "VARCHAR",
+          "meaning": "SHA256 digest of the source file containing the rejected row",
+          "unit": null,
+          "nullable": false
+        },
+        {
+          "name": "primary_reason",
+          "type": "VARCHAR",
+          "unit": null,
+          "nullable": false,
+          "meaning": "Primary rejection reason code assigned to the row"
+        },
+        {
+          "name": "all_reasons",
+          "type": "VARCHAR",
+          "unit": null,
+          "nullable": true,
+          "meaning": "All rejection reason codes serialized as a JSON array string"
+        }
+      ],
+      "as_of": "2026-02-09T00:00:00Z",
+      "row_count": 395,
+      "input_manifest_sha256": "77dacfdb5a8b4e82fb2316990972de731a51b31f9fc052d739d0dea78e992331",
+      "contract_sha256": "edf8daf1446bba565c34e0c35eaa5aa8945d9b00d39fad3d87a083defc165b47",
+      "code_sha256": "b7689a4367f678d4e41fc2fdc7114b6b97890bdbd48881bc59dfea4da8d75475",
+      "quality_report": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/quality_after.json",
+      "retention": {
+        "days": 7,
+        "start_basis": "run_completion",
+        "hold": false,
+        "dependent_release_ids": [],
+        "action": "dry-run only"
+      },
+      "provenance": {
+        "job_name": "curate-and-verify",
+        "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816"
+      }
+    },
+    {
+      "dataset_id": "curated-candidate",
+      "title": "Curated Telemetry Temperature Observations",
+      "purpose": "Normalized and quality-checked temperature measurements for research analysis",
+      "owner": "Data Curator Team",
+      "classification": "Internal",
+      "allowed_use": "synthetic teaching use",
+      "location": [
+        "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/curated.parquet"
+      ],
+      "schema_version": "research-telemetry-v1",
+      "columns": [
+        {
+          "name": "record_id",
+          "type": "VARCHAR",
+          "unit": null,
+          "nullable": false,
+          "meaning": "Unique record business identifier"
+        },
+        {
+          "name": "sensor_id",
+          "type": "VARCHAR",
+          "unit": null,
+          "nullable": false,
+          "meaning": "Sensor hardware identifier"
+        },
+        {
+          "name": "site",
+          "type": "VARCHAR",
+          "unit": null,
+          "nullable": true,
+          "meaning": "Site location mapped from registry"
+        },
+        {
+          "name": "event_time_utc",
+          "type": "TIMESTAMP",
+          "unit": "ISO8601 UTC",
+          "nullable": false,
+          "meaning": "Time reading was taken"
+        },
+        {
+          "name": "ingest_time_utc",
+          "type": "TIMESTAMP",
+          "unit": "ISO8601 UTC",
+          "nullable": false,
+          "meaning": "Time reading entered system"
+        },
+        {
+          "name": "temperature_c",
+          "type": "DECIMAL(8,2)",
+          "unit": "Celsius",
+          "nullable": false,
+          "meaning": "Selected observation converted to Celsius"
+        },
+        {
+          "name": "is_late",
+          "type": "BOOLEAN",
+          "unit": null,
+          "nullable": false,
+          "meaning": "Flag if ingest lag > 900s"
+        },
+        {
+          "name": "source_object",
+          "type": "VARCHAR",
+          "unit": null,
+          "nullable": false,
+          "meaning": "Source file URI"
+        },
+        {
+          "name": "source_row",
+          "type": "BIGINT",
+          "unit": null,
+          "nullable": false,
+          "meaning": "Source line/row ordinal"
+        },
+        {
+          "name": "source_sha256",
+          "type": "VARCHAR",
+          "unit": null,
+          "nullable": false,
+          "meaning": "Source file SHA256 digest"
+        }
+      ],
+      "as_of": "2026-02-09T00:00:00Z",
+      "row_count": 9610,
+      "input_manifest_sha256": "77dacfdb5a8b4e82fb2316990972de731a51b31f9fc052d739d0dea78e992331",
+      "contract_sha256": "edf8daf1446bba565c34e0c35eaa5aa8945d9b00d39fad3d87a083defc165b47",
+      "code_sha256": "b7689a4367f678d4e41fc2fdc7114b6b97890bdbd48881bc59dfea4da8d75475",
+      "quality_report": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/quality_after.json",
+      "retention": {
+        "days": 90,
+        "start_basis": "publication_time",
+        "hold": false,
+        "dependent_release_ids": [],
+        "action": "dry-run only"
+      },
+      "provenance": {
+        "job_name": "curate-and-verify",
+        "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816"
+      }
+    }
+  ]
+}

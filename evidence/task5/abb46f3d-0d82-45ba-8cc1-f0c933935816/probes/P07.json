@@ -1,0 +1,15 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "probe_id": "P07",
+  "mutation": "Remove curated.parquet from disposable COMPLETE.outputs",
+  "original_output_count": 3,
+  "mutated_output_count": 2,
+  "curated_output_present": false,
+  "expected": "REJECT",
+  "actual": "REJECT",
+  "reason_codes": [
+    "LINEAGE"
+  ],
+  "original_lineage_modified": false,
+  "publication_approved": false
+}

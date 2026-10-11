@@ -1,0 +1,53 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "created_at_utc": "2026-10-11T14:03:03.830990+00:00",
+  "purpose": "Supplemental content-based mapping of lineage outputs to staging objects",
+  "source_lineage_file": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/lineage.jsonl",
+  "source_lineage_preserved": true,
+  "lineage_event_count": 2,
+  "stage_receipt_status": "VERIFIED",
+  "readback_all_verified": true,
+  "artifact_reconciliation": [
+    {
+      "artifact": "curated.parquet",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/curated.parquet",
+      "local_sha256": "84e092ae12b886aa004db6f6b990a83db5306590faf44f0c80ba9fd3fbc165b9",
+      "local_bytes": 209699,
+      "receipt_present": true,
+      "readback_present": true,
+      "receipt_hash_match": true,
+      "receipt_bytes_match": true,
+      "readback_hash_match": true,
+      "readback_bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "artifact": "duplicates.csv",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/duplicates.csv",
+      "local_sha256": "609707690b4f83f3642deea5e53dda3f03880f0025beaa2c565617f2f87191da",
+      "local_bytes": 59433,
+      "receipt_present": true,
+      "readback_present": true,
+      "receipt_hash_match": true,
+      "receipt_bytes_match": true,
+      "readback_hash_match": true,
+      "readback_bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "artifact": "quarantine.csv",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/quarantine.csv",
+      "local_sha256": "2001a318d27eed21887b251334d44dd4cd96fd6c4eef675d811a45c8121c880c",
+      "local_bytes": 183506,
+      "receipt_present": true,
+      "readback_present": true,
+      "receipt_hash_match": true,
+      "receipt_bytes_match": true,
+      "readback_hash_match": true,
+      "readback_bytes_match": true,
+      "status": "PASS"
+    }
+  ],
+  "overall_status": "PASS",
+  "publication_approved": false
+}

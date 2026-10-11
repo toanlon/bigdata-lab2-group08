@@ -1,0 +1,19 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "probe_id": "P08",
+  "mutation": "Remove QA sample ID R000810 from disposable candidate",
+  "removed_id": "R000810",
+  "candidate_rows_before": 9610,
+  "candidate_rows_after": 9609,
+  "removed_id_count_before": 1,
+  "removed_id_count_after": 0,
+  "qa_reference_rows": 100,
+  "matched_qa_ids_after": 99,
+  "coverage_ratio_after": 0.99,
+  "expected": "REJECT",
+  "actual": "REJECT",
+  "reason_codes": [
+    "COVERAGE"
+  ],
+  "publication_approved": false
+}

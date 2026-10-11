@@ -1,0 +1,46 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "checked_at_utc": "2026-10-11T14:20:13.428188+00:00",
+  "method": "Compare local artifact SHA-256 and bytes with successful S3 GET read-back",
+  "results": [
+    {
+      "artifact": "curated.parquet",
+      "lineage_uri": "file:///work/runs/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/curated.parquet",
+      "staging_uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/curated.parquet",
+      "local_sha256": "84e092ae12b886aa004db6f6b990a83db5306590faf44f0c80ba9fd3fbc165b9",
+      "staging_sha256": "84e092ae12b886aa004db6f6b990a83db5306590faf44f0c80ba9fd3fbc165b9",
+      "local_bytes": 209699,
+      "staging_bytes": 209699,
+      "content_hash_and_size_match": true,
+      "uri_identity_proven": false,
+      "status": "CONTENT_MATCH_URI_MAPPING_NOT_PROVEN"
+    },
+    {
+      "artifact": "duplicates.csv",
+      "lineage_uri": "file:///work/runs/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/duplicates.csv",
+      "staging_uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/duplicates.csv",
+      "local_sha256": "609707690b4f83f3642deea5e53dda3f03880f0025beaa2c565617f2f87191da",
+      "staging_sha256": "609707690b4f83f3642deea5e53dda3f03880f0025beaa2c565617f2f87191da",
+      "local_bytes": 59433,
+      "staging_bytes": 59433,
+      "content_hash_and_size_match": true,
+      "uri_identity_proven": false,
+      "status": "CONTENT_MATCH_URI_MAPPING_NOT_PROVEN"
+    },
+    {
+      "artifact": "quarantine.csv",
+      "lineage_uri": "file:///work/runs/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/quarantine.csv",
+      "staging_uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/quarantine.csv",
+      "local_sha256": "2001a318d27eed21887b251334d44dd4cd96fd6c4eef675d811a45c8121c880c",
+      "staging_sha256": "2001a318d27eed21887b251334d44dd4cd96fd6c4eef675d811a45c8121c880c",
+      "local_bytes": 183506,
+      "staging_bytes": 183506,
+      "content_hash_and_size_match": true,
+      "uri_identity_proven": false,
+      "status": "CONTENT_MATCH_URI_MAPPING_NOT_PROVEN"
+    }
+  ],
+  "all_content_matches": true,
+  "uri_mapping_proven": false,
+  "publication_approved": false
+}

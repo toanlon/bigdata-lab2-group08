@@ -1,0 +1,11 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "checked_at_utc": "2026-10-11T14:05:34.961636+00:00",
+  "check": "static candidate metadata preflight",
+  "dataset_match_count": 1,
+  "steward": "Lead Data Engineer",
+  "row_count": 9610,
+  "publication_approved": false,
+  "issues": [],
+  "status": "PASS"
+}

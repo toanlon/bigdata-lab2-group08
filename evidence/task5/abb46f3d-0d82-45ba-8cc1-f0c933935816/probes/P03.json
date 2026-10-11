@@ -1,0 +1,14 @@
+{
+  "probe_id": "P03",
+  "mutation": "Set one required temperature_c to NULL in disposable copy",
+  "row_count": 9610,
+  "temperature_c_null_count": 1,
+  "out_of_range_count": 0,
+  "expected": "REJECT",
+  "actual": "REJECT",
+  "reason_codes": [
+    "REQUIRED"
+  ],
+  "null_count_preserved": true,
+  "publication_approved": false
+}
