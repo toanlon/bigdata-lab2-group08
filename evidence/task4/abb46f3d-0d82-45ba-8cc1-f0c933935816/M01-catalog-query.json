@@ -1,0 +1,126 @@
+{
+  "check_id": "M01",
+  "query": "Look up curated candidate metadata and its quality report",
+  "dataset": {
+    "dataset_id": "curated-candidate",
+    "owner": "Data Curator Team",
+    "steward": "Lead Data Engineer",
+    "row_count": 9610,
+    "location": [
+      "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/curated.parquet"
+    ],
+    "schema_version": "research-telemetry-v1"
+  },
+  "quality_report_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/quality_after.json",
+  "quality_report_run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "quality_metrics": [
+    {
+      "rule_id": "Q_CHRONOLOGY",
+      "cohort": "All exported candidate rows",
+      "numerator": 9610,
+      "denominator": 9610,
+      "dataset_id": "curated-candidate",
+      "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+      "contract_version": "research-telemetry-v1",
+      "value": 1.0,
+      "status": "EVALUATED",
+      "threshold": 1.0,
+      "severity": "BLOCK"
+    },
+    {
+      "rule_id": "Q_REQUIRED",
+      "cohort": "All exported candidate rows",
+      "numerator": 9610,
+      "denominator": 9610,
+      "dataset_id": "curated-candidate",
+      "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+      "contract_version": "research-telemetry-v1",
+      "value": 1.0,
+      "status": "EVALUATED",
+      "threshold": 1.0,
+      "severity": "BLOCK"
+    },
+    {
+      "rule_id": "Q_SENSOR",
+      "cohort": "All exported candidate rows",
+      "numerator": 9610,
+      "denominator": 9610,
+      "dataset_id": "curated-candidate",
+      "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+      "contract_version": "research-telemetry-v1",
+      "value": 1.0,
+      "status": "EVALUATED",
+      "threshold": 1.0,
+      "severity": "BLOCK"
+    },
+    {
+      "rule_id": "Q_TIMELY",
+      "cohort": "Chronologically valid exported candidate rows",
+      "numerator": 9410,
+      "denominator": 9610,
+      "dataset_id": "curated-candidate",
+      "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+      "contract_version": "research-telemetry-v1",
+      "value": 0.9791883454734651,
+      "status": "EVALUATED",
+      "threshold": 0.95,
+      "severity": "BLOCK"
+    },
+    {
+      "rule_id": "Q_UNIQUE",
+      "cohort": "All exported candidate rows",
+      "numerator": 9610,
+      "denominator": 9610,
+      "dataset_id": "curated-candidate",
+      "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+      "contract_version": "research-telemetry-v1",
+      "value": 1.0,
+      "status": "EVALUATED",
+      "threshold": 1.0,
+      "severity": "BLOCK"
+    },
+    {
+      "rule_id": "Q_VALUE",
+      "cohort": "All exported candidate rows",
+      "numerator": 9610,
+      "denominator": 9610,
+      "dataset_id": "curated-candidate",
+      "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+      "contract_version": "research-telemetry-v1",
+      "value": 1.0,
+      "status": "EVALUATED",
+      "threshold": 1.0,
+      "severity": "BLOCK"
+    },
+    {
+      "rule_id": "Q_REFERENCE_COVERAGE",
+      "cohort": "All frozen reference IDs",
+      "numerator": 100,
+      "denominator": 100,
+      "dataset_id": "curated-candidate",
+      "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+      "contract_version": "research-telemetry-v1",
+      "value": 1.0,
+      "status": "EVALUATED",
+      "threshold": 1.0,
+      "severity": "BLOCK"
+    },
+    {
+      "rule_id": "Q_REFERENCE_AGREEMENT",
+      "cohort": "Matched frozen reference IDs",
+      "numerator": 95,
+      "denominator": 100,
+      "dataset_id": "curated-candidate",
+      "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+      "contract_version": "research-telemetry-v1",
+      "value": 0.95,
+      "status": "EVALUATED",
+      "threshold": 0.95,
+      "severity": "BLOCK"
+    }
+  ],
+  "evidence_source": [
+    "catalog.json",
+    "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/quality_after.json"
+  ]
+}

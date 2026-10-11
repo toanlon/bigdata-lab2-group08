@@ -1,0 +1,192 @@
+{
+  "run_id": "abb46f3d-0d82-45ba-8cc1-f0c933935816",
+  "receipt_status": "VERIFIED",
+  "scope": "local files compared with stage-upload receipt",
+  "results": [
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/C01.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/C01.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/C02.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/C02.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/C03.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/C03.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/C04.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/C04.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/C05.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/C05.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/artifact-manifest.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/artifact-manifest.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/curated.parquet",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/curated.parquet",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/duplicates.csv",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/duplicates.csv",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/quarantine.csv",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/candidate/quarantine.csv",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/checks.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/checks.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/code/run_task3.py",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/code/run_task3.py",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/code/task3/curate.sql",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/code/task3/curate.sql",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/code/task3/quality.sql",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/code/task3/quality.sql",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/code/task3/typed.sql",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/code/task3/typed.sql",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/inputs/contract-review.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/inputs/contract-review.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/inputs/contract.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/inputs/contract.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/inputs/contract.sha256",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/inputs/contract.sha256",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/inputs/input_inventory.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/inputs/input_inventory.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/inputs/trusted_manifest.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/inputs/trusted_manifest.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/lineage.jsonl",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/lineage.jsonl",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/quality_after.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/quality_after.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/quarantine-summary.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/quarantine-summary.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/reference-comparison.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/reference-comparison.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/run-record.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/run-record.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/schema-counts.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/schema-counts.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    },
+    {
+      "uri": "s3://research-raw/lab2/staging/abb46f3d-0d82-45ba-8cc1-f0c933935816/source-integrity.json",
+      "local_path": "evidence/task3/abb46f3d-0d82-45ba-8cc1-f0c933935816/source-integrity.json",
+      "hash_match": true,
+      "bytes_match": true,
+      "status": "PASS"
+    }
+  ],
+  "all_local_matches_pass": true,
+  "missing_local_file_count": 0,
+  "note": "This does not independently read back objects from S3."
+}

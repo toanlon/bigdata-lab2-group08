@@ -1,45 +1,80 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.edu/bigdata/lab2/metadata-catalog.schema.json",
-  "title": "Lab 2 Dataset Catalog Entry",
+  "title": "Lab 2 Metadata Catalog",
   "type": "object",
-  "required": [
-    "dataset_id", "title", "purpose", "owner", "steward", "classification",
-    "allowed_use", "location", "schema_version", "columns", "as_of", "row_count",
-    "input_manifest_sha256", "contract_sha256", "code_sha256",
-    "quality_report", "retention", "provenance"
-  ],
+  "required": ["datasets"],
+  "additionalProperties": false,
   "properties": {
-    "dataset_id": {"type": "string", "minLength": 1},
-    "title": {"type": "string", "minLength": 1},
-    "purpose": {"type": "string", "minLength": 1},
-    "owner": {"type": "string", "minLength": 1},
-    "steward": {"type": "string", "minLength": 1},
-    "classification": {"type": "string", "minLength": 1},
-    "allowed_use": {"type": "string", "minLength": 1},
-    "location": {"type": "string", "minLength": 1},
-    "schema_version": {"type": "string", "minLength": 1},
-    "as_of": {"type": "string", "format": "date-time"},
-    "row_count": {"type": "integer", "minimum": 0},
-    "columns": {
-      "type": "array", "minItems": 1,
+    "datasets": {
+      "type": "array",
+      "minItems": 3,
       "items": {
         "type": "object",
-        "required": ["name", "type", "meaning", "nullable"],
+        "required": [
+          "dataset_id", "title", "purpose", "owner", "steward",
+          "classification", "allowed_use", "location", "schema_version",
+          "columns", "as_of", "row_count", "input_manifest_sha256",
+          "contract_sha256", "code_sha256", "quality_report",
+          "retention", "provenance"
+        ],
+        "additionalProperties": false,
         "properties": {
-          "name": {"type": "string"}, "type": {"type": "string"},
-          "meaning": {"type": "string"}, "unit": {"type": ["string", "null"]},
-          "nullable": {"type": "boolean"}
-        },
-        "additionalProperties": false
+          "dataset_id": {"type": "string", "minLength": 1},
+          "title": {"type": "string", "minLength": 1},
+          "purpose": {"type": "string", "minLength": 1},
+          "owner": {"type": "string", "minLength": 1},
+          "steward": {"type": "string", "minLength": 1},
+          "classification": {"enum": ["Public", "Internal", "Restricted"]},
+          "allowed_use": {"type": "string", "minLength": 1},
+          "location": {
+            "type": "array", "minItems": 1,
+            "items": {"type": "string", "minLength": 1}
+          },
+          "schema_version": {"type": "string", "minLength": 1},
+          "columns": {
+            "type": "array", "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["name", "type", "meaning", "unit", "nullable"],
+              "additionalProperties": false,
+              "properties": {
+                "name": {"type": "string", "minLength": 1},
+                "type": {"type": "string", "minLength": 1},
+                "meaning": {"type": "string", "minLength": 1},
+                "unit": {"type": ["string", "null"]},
+                "nullable": {"type": "boolean"}
+              }
+            }
+          },
+          "as_of": {"type": "string", "format": "date-time"},
+          "row_count": {"type": "integer", "minimum": 0},
+          "input_manifest_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "contract_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "code_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "quality_report": {"type": "string", "minLength": 1},
+          "retention": {
+            "type": "object",
+            "required": ["days", "start_basis", "hold", "dependent_release_ids", "action"],
+            "additionalProperties": false,
+            "properties": {
+              "days": {"type": "integer", "minimum": 1},
+              "start_basis": {"type": "string", "minLength": 1},
+              "hold": {"type": "boolean"},
+              "dependent_release_ids": {"type": "array", "items": {"type": "string"}},
+              "action": {"type": "string", "minLength": 1}
+            }
+          },
+          "provenance": {
+            "type": "object",
+            "required": ["job_name", "run_id"],
+            "additionalProperties": false,
+            "properties": {
+              "job_name": {"type": "string", "minLength": 1},
+              "run_id": {"type": "string", "format": "uuid"}
+            }
+          }
+        }
       }
-    },
-    "input_manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
-    "contract_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
-    "code_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
-    "quality_report": {"type": "string", "minLength": 1},
-    "retention": {"type": "object"},
-    "provenance": {"type": "object"}
-  },
-  "additionalProperties": true
+    }
+  }
 }
